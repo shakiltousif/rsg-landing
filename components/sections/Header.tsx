@@ -31,7 +31,7 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? 'bg-white/95 backdrop-blur-md shadow-md'
           : 'bg-transparent'
       )}
@@ -59,7 +59,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-neutral-600 transition-colors hover:text-sky-600"
+                className="text-sm font-medium text-neutral-600 transition-colors hover:text-primary-600"
               >
                 {link.label}
               </a>
@@ -79,36 +79,37 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex md:hidden"
+            className="flex p-2 text-neutral-600 transition-colors hover:bg-neutral-100 rounded-lg md:hidden"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-neutral-900" />
+              <X className="h-6 w-6" />
             ) : (
-              <Menu className="h-6 w-6 text-neutral-900" />
+              <Menu className="h-6 w-6" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="border-t border-neutral-200 py-4 md:hidden">
-            <nav className="flex flex-col gap-4">
+          <div className="absolute left-0 right-0 top-full border-t border-neutral-100 bg-white px-4 py-6 shadow-xl md:hidden">
+            <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-neutral-600 transition-colors hover:text-sky-600"
+                  className="text-lg font-medium text-neutral-600 transition-colors hover:text-primary-600"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="mt-4 flex flex-col gap-2">
-                <Button variant="ghost" size="md" href="#signup" fullWidth>
+              <hr className="border-neutral-100" />
+              <div className="flex flex-col gap-3">
+                <Button variant="ghost" size="lg" href="#signup" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
                   Sign In
                 </Button>
-                <Button variant="primary" size="md" href="#signup" fullWidth>
+                <Button variant="primary" size="lg" href="#signup" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
                   Join Free
                 </Button>
               </div>

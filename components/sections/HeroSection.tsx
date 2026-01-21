@@ -8,10 +8,10 @@ import { heroContent } from '@/lib/content'
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white pt-24 pb-20 lg:pt-32 lg:pb-28">
-      {/* Background blobs */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 h-[600px] w-[600px] rounded-full bg-primary-50 blur-3xl opacity-60 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 h-[500px] w-[500px] rounded-full bg-primary-100 blur-3xl opacity-40 pointer-events-none" />
+    <section className="relative overflow-hidden bg-white pt-24 pb-16 lg:pt-32 lg:pb-28">
+      {/* Background blobs - Hidden on mobile to keep it clean */}
+      <div className="hidden lg:block absolute top-0 right-0 -mr-20 -mt-20 h-[600px] w-[600px] rounded-full bg-primary-50 blur-3xl opacity-60 pointer-events-none" />
+      <div className="hidden lg:block absolute bottom-0 left-0 -ml-20 -mb-20 h-[500px] w-[500px] rounded-full bg-primary-100 blur-3xl opacity-40 pointer-events-none" />
 
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -22,7 +22,7 @@ export function HeroSection() {
                 <span className="flex h-2 w-2 rounded-full bg-primary-600" />
                 The #1 Platform for Independent Drivers
               </div>
-              <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl xl:text-7xl mb-6">
+              <h1 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl xl:text-7xl mb-6">
                 {heroContent.headline}
               </h1>
             </FadeIn>
@@ -38,7 +38,8 @@ export function HeroSection() {
               <div className="flex flex-col gap-4 sm:flex-row mb-8">
                 <Button
                   variant="primary"
-                  size="lg"
+                  size="md"
+                  className="sm:text-lg sm:px-8 sm:py-3.5"
                   href={heroContent.primaryCTA.href}
                   icon={<ArrowRight className="h-5 w-5" />}
                   iconPosition="right"
@@ -47,7 +48,8 @@ export function HeroSection() {
                 </Button>
                 <Button
                   variant="secondary"
-                  size="lg"
+                  size="md"
+                  className="sm:text-lg sm:px-8 sm:py-3.5"
                   href={heroContent.secondaryCTA.href}
                 >
                   {heroContent.secondaryCTA.text}

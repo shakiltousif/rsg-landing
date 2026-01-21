@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { Menu, X } from 'lucide-react'
@@ -38,10 +39,15 @@ export function Header() {
       <Container>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-amber-500">
-              <span className="text-xl font-bold text-white">RSG</span>
-            </div>
+          <a href="/" className="flex items-center gap-3">
+            <Image
+              src="/images/logos/rsg-logo.png"
+              alt="RideShare Guides Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
             <span className="text-xl font-bold text-neutral-900">
               RideShare Guides
             </span>

@@ -54,6 +54,58 @@ export function FAQSection() {
           allowMultiple
         />
       </div>
+
+      {/* Personal Driver ID */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">🎫 Personal Driver ID #</h3>
+        <Accordion
+          items={filterFAQs(faqsForDrivers.driverId).map((faq, idx) => ({
+            id: `id-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
+
+      {/* The Don Reservations System */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">🚗 The Don Reservations System</h3>
+        <Accordion
+          items={filterFAQs(faqsForDrivers.donReservations).map((faq, idx) => ({
+            id: `don-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
+
+      {/* Community & Networking */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">👥 Community & Networking</h3>
+        <Accordion
+          items={filterFAQs(faqsForDrivers.community).map((faq, idx) => ({
+            id: `community-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
+
+      {/* RSG Drivers Directory */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">📂 RSG Drivers Directory</h3>
+        <Accordion
+          items={filterFAQs(faqsForDrivers.directory).map((faq, idx) => ({
+            id: `directory-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
     </div>
   )
 
@@ -79,6 +131,32 @@ export function FAQSection() {
         <Accordion
           items={filterFAQs(faqsForRiders.safetyTrust).map((faq, idx) => ({
             id: `safety-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
+
+      {/* Using the Platform */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 Using the Platform</h3>
+        <Accordion
+          items={filterFAQs(faqsForRiders.usingPlatform).map((faq, idx) => ({
+            id: `using-${idx}`,
+            title: faq.question,
+            content: faq.answer,
+          }))}
+          allowMultiple
+        />
+      </div>
+
+      {/* Benefits for Riders */}
+      <div>
+        <h3 className="mb-4 text-xl font-bold text-neutral-900">🎯 Benefits for Riders</h3>
+        <Accordion
+          items={filterFAQs(faqsForRiders.benefits).map((faq, idx) => ({
+            id: `benefits-${idx}`,
             title: faq.question,
             content: faq.answer,
           }))}

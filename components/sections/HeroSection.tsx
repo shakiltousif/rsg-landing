@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Button } from '../ui/Button'
 import { Container } from '../ui/Container'
 import { FadeIn } from '../animations/FadeIn'
@@ -81,7 +82,7 @@ export function HeroSection() {
                 <div className="relative z-10 mx-auto w-[300px] overflow-hidden rounded-[3rem] border-[8px] border-neutral-900 bg-neutral-900 shadow-2xl">
                    {/* Notch */}
                    <div className="absolute top-0 left-1/2 h-6 w-32 -translate-x-1/2 rounded-b-2xl bg-neutral-900 z-20" />
-                   
+
                    {/* Screen Content */}
                    <div className="relative h-[600px] w-full bg-white overflow-hidden flex flex-col">
                       {/* Header Image Area */}

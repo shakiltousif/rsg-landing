@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/sections/HeroSection'
 import { DigitalBusinessCard } from '@/components/sections/DigitalBusinessCard'
 import { CommunityInfluencers } from '@/components/sections/CommunityInfluencers'
 import { DonReservations } from '@/components/sections/DonReservations'
+import { DriversDirectory } from '@/components/sections/DriversDirectory'
 import { HowItWorks } from '@/components/sections/HowItWorks'
 import { MembershipComparison } from '@/components/sections/MembershipComparison'
 import { Testimonials } from '@/components/sections/Testimonials'
@@ -51,6 +52,7 @@ export default function Home() {
         <DigitalBusinessCard />
         <CommunityInfluencers />
         <DonReservations />
+        <DriversDirectory />
         <HowItWorks />
         <MembershipComparison />
         <Testimonials />

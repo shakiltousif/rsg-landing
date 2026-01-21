@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
@@ -70,17 +71,19 @@ export function DonReservations() {
               </div>
             </Card>
 
-            {/* Phone Mockup Placeholder */}
-            <Card className="aspect-[9/16] max-w-xs bg-gradient-to-br from-neutral-100 to-neutral-200">
-              <div className="flex h-full items-center justify-center text-center">
-                <div>
-                  <p className="font-semibold text-neutral-600">
-                    The Don Reservations
-                  </p>
-                  <p className="text-sm text-neutral-500">App Preview</p>
-                </div>
+            {/* Phone Mockup */}
+            <div className="mx-auto max-w-xs">
+              <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl shadow-2xl">
+                <Image
+                  src="/images/mockups/don-reservations-mobile.png"
+                  alt="The Don Reservations App Interface"
+                  width={400}
+                  height={800}
+                  priority
+                  className="object-cover"
+                />
               </div>
-            </Card>
+            </div>
 
             {/* CTAs */}
             <div className="space-y-3">

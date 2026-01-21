@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Tabs } from '../ui/Tabs'
@@ -80,14 +81,15 @@ export function HowItWorks() {
         </div>
 
         {/* Dashboard Mockup */}
-        <Card className="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 lg:aspect-auto">
-          <div className="flex h-full items-center justify-center">
-            <div className="text-center">
-              <p className="font-semibold text-neutral-600">Driver Dashboard</p>
-              <p className="text-sm text-neutral-500">Preview Mockup</p>
-            </div>
-          </div>
-        </Card>
+        <div className="overflow-hidden rounded-xl shadow-xl ring-1 ring-neutral-200">
+          <Image
+            src="/images/hero-dashboard.png"
+            alt="Driver Dashboard Preview"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+          />
+        </div>
       </div>
 
       {/* Requirements */}

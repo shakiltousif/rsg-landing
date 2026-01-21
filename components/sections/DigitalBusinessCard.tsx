@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Tabs } from '../ui/Tabs'
@@ -57,44 +58,15 @@ export function DigitalBusinessCard() {
 
         {/* Business Card Preview */}
         <div className="flex items-center justify-center">
-          <Card variant="elevated" hover className="w-full max-w-md">
-            <div className="space-y-4">
-              {/* Card Header */}
-              <div className="flex items-center gap-4">
-                <div className="h-20 w-20 rounded-full bg-gradient-to-br from-primary-400 to-primary-600" />
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold text-neutral-900">
-                    John Driver
-                  </h4>
-                  <p className="text-sm text-neutral-600">
-                    Professional Driver
-                  </p>
-                  <p className="mt-1 text-xs font-mono text-primary-600">
-                    ID #RSG-123456
-                  </p>
-                </div>
-              </div>
-
-              {/* Vehicle Photo Placeholder */}
-              <div className="aspect-video rounded-lg bg-gradient-to-br from-neutral-100 to-neutral-200" />
-
-              {/* Quick Actions */}
-              <div className="grid grid-cols-2 gap-2">
-                <button className="flex items-center justify-center gap-2 rounded-lg border-2 border-primary-500 px-4 py-2 text-sm font-semibold text-primary-600 transition-colors hover:bg-primary-50">
-                  <QrCode className="h-4 w-4" />
-                  Scan QR
-                </button>
-                <button className="flex items-center justify-center gap-2 rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600">
-                  <Share2 className="h-4 w-4" />
-                  Share
-                </button>
-              </div>
-
-              <p className="text-center text-xs text-neutral-500">
-                Sample Business Card Preview
-              </p>
-            </div>
-          </Card>
+          <div className="relative w-full max-w-md overflow-hidden rounded-xl shadow-2xl transition-all hover:-translate-y-1 hover:shadow-3xl">
+            <Image
+              src="/images/business-cards/card-1.png"
+              alt="Sample Business Card Preview"
+              width={600}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -168,6 +140,35 @@ export function DigitalBusinessCard() {
 
         <FadeIn delay={0.2}>
           <Tabs tabs={tabs} defaultTab="drivers" />
+        </FadeIn>
+
+        {/* Business Card Gallery */}
+        <FadeIn delay={0.4}>
+          <div className="mt-16">
+            <h3 className="mb-8 text-center text-2xl font-bold text-neutral-900">
+              Sample Business Cards
+            </h3>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                <div
+                  key={num}
+                  className="group relative aspect-[3/2] overflow-hidden rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <Image
+                    src={`/images/business-cards/card-${num}.png`}
+                    alt={`Sample Business Card ${num}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Button variant="secondary" size="lg">
+                See More Examples
+              </Button>
+            </div>
+          </div>
         </FadeIn>
       </Container>
     </section>

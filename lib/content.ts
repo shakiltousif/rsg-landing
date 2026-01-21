@@ -467,6 +467,24 @@ export const sections = {
       'Start accepting direct bookings',
     ],
   },
+  driversDirectory: {
+    forDrivers: {
+      title: 'For Drivers: Get Discovered',
+      benefits: [
+        'Free professional profile in searchable directory',
+        'Showcase your services, vehicles, and specialties',
+        'Display verified ratings and customer reviews',
+        'Include your Personal Driver ID # for direct bookings',
+        'Update your availability and coverage areas in real-time',
+        'Connect with riders actively seeking professional drivers',
+      ],
+    },
+    forRiders: {
+      title: 'For Riders: Find Your Perfect Driver',
+      description:
+        'Search our directory of verified, commercially-insured professional drivers. Filter by location, services, vehicle type, and ratings to find the perfect match for your transportation needs.',
+    },
+  },
   comingSoon: [
     {
       icon: 'MessageSquare',

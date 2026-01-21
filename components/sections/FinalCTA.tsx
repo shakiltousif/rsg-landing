@@ -1,8 +1,11 @@
+'use client'
+
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { Card } from '../ui/Card'
-import { Check, Mail, MessageSquare, Phone } from 'lucide-react'
+import { Check, Mail, MessageSquare, Phone, CarFront, User } from 'lucide-react'
 import { contactInfo } from '@/lib/content'
+import { FadeIn } from '../animations/FadeIn'
 
 export function FinalCTA() {
   const driverBenefits = [
@@ -23,95 +26,133 @@ export function FinalCTA() {
   ]
 
   return (
-    <section id="signup" className="bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500 py-16 text-white lg:py-24">
-      <Container>
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Your Professional Transportation Business Starts Today
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-primary-50 sm:text-xl">
-            Join thousands of drivers and riders who are taking control of their transportation future.
-          </p>
-        </div>
+    <section id="signup" className="relative overflow-hidden bg-neutral-900 py-24 lg:py-32">
+      {/* Background Glows */}
+      <div className="absolute top-0 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-900/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 translate-x-1/2 translate-y-1/2 w-[600px] h-[600px] bg-accent-900/20 rounded-full blur-3xl pointer-events-none" />
+
+      <Container className="relative">
+        <FadeIn>
+          <div className="mb-16 text-center">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Your Professional Transportation<br className="hidden sm:block" /> Business Starts Today
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-neutral-400 sm:text-xl">
+              Join thousands of drivers and riders who are taking control of their transportation future.
+            </p>
+          </div>
+        </FadeIn>
 
         {/* Benefits Grid */}
-        <div className="mb-12 grid gap-8 lg:grid-cols-2">
-          {/* Drivers */}
-          <Card className="bg-white/10 backdrop-blur-sm">
-            <h3 className="mb-6 text-2xl font-bold">For Drivers</h3>
-            <div className="mb-6 space-y-3">
-              {driverBenefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-success-500">
-                    <Check className="h-4 w-4 text-white" />
+        <div className="mb-20 grid gap-8 lg:grid-cols-2 lg:gap-12">
+          {/* Drivers Card */}
+          <FadeIn delay={0.1} className="h-full">
+            <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl bg-white p-8 shadow-2xl ring-1 ring-white/10 sm:p-10">
+              <div>
+                <div className="mb-6 flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600">
+                    <CarFront className="h-6 w-6" />
                   </div>
-                  <span>{benefit}</span>
+                  <h3 className="text-2xl font-bold text-neutral-900">For Drivers</h3>
                 </div>
-              ))}
-            </div>
-            <Button
-              variant="secondary"
-              size="lg"
-              fullWidth
-              className="bg-white text-primary-600 hover:bg-neutral-50"
-            >
-              JOIN RSG FREE - GET YOUR DIGITAL BUSINESS CARD
-            </Button>
-          </Card>
+                
+                <ul className="mb-8 space-y-4">
+                  {driverBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-success-100 text-success-600">
+                        <Check className="h-4 w-4" />
+                      </div>
+                      <span className="font-medium text-neutral-700">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Riders */}
-          <Card className="bg-white/10 backdrop-blur-sm">
-            <h3 className="mb-6 text-2xl font-bold">For Riders</h3>
-            <div className="mb-6 space-y-3">
-              {riderBenefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-success-500">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <span>{benefit}</span>
-                </div>
-              ))}
+              <Button
+                variant="primary"
+                size="lg"
+                fullWidth
+                href="#signup"
+                className="w-full"
+              >
+                Join RSG Free
+              </Button>
             </div>
-            <Button
-              variant="secondary"
-              size="lg"
-              fullWidth
-              className="bg-white text-primary-600 hover:bg-neutral-50"
-            >
-              RIDERS: FIND YOUR DRIVER
-            </Button>
-          </Card>
+          </FadeIn>
+
+          {/* Riders Card */}
+          <FadeIn delay={0.2} className="h-full">
+            <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl bg-white/5 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-sm sm:p-10">
+              <div>
+                <div className="mb-6 flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-500/10 text-accent-400">
+                    <User className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">For Riders</h3>
+                </div>
+
+                <ul className="mb-8 space-y-4">
+                  {riderBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent-500/10 text-accent-400">
+                        <Check className="h-4 w-4" />
+                      </div>
+                      <span className="font-medium text-neutral-200">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Button
+                variant="secondary"
+                size="lg"
+                fullWidth
+                href="#find-drivers"
+                className="w-full border-neutral-700 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white"
+              >
+                Find Your Driver
+              </Button>
+            </div>
+          </FadeIn>
         </div>
 
-        {/* Support Section */}
-        <Card className="bg-white/10 backdrop-blur-sm">
-          <div className="text-center">
-            <h3 className="mb-6 text-2xl font-bold">Questions? We're Here to Help</h3>
-            <div className="grid gap-4 sm:grid-cols-3">
-              <div className="flex flex-col items-center gap-2">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20">
-                  <Mail className="h-6 w-6" />
+        {/* Support Footer */}
+        <FadeIn delay={0.3}>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/50 p-8 text-center backdrop-blur">
+            <h3 className="mb-6 text-xl font-semibold text-white">Questions? We're Here to Help</h3>
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+              <a href={`mailto:${contactInfo.email}`} className="group flex items-center gap-3 transition-colors hover:text-primary-400">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-400 transition-colors group-hover:bg-primary-900/50 group-hover:text-primary-400">
+                  <Mail className="h-5 w-5" />
                 </div>
-                <p className="font-semibold">Email Us</p>
-                <p className="text-sm text-primary-100">{contactInfo.email}</p>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-white">Email Us</p>
+                  <p className="text-xs text-neutral-400">{contactInfo.email}</p>
+                </div>
+              </a>
+              
+              <div className="group flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-400">
+                  <MessageSquare className="h-5 w-5" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-white">Live Chat</p>
+                  <p className="text-xs text-neutral-400">{contactInfo.liveChat}</p>
+                </div>
               </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20">
-                  <MessageSquare className="h-6 w-6" />
+
+              <div className="group flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-400">
+                  <Phone className="h-5 w-5" />
                 </div>
-                <p className="font-semibold">Live Chat</p>
-                <p className="text-sm text-primary-100">{contactInfo.liveChat}</p>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20">
-                  <Phone className="h-6 w-6" />
+                <div className="text-left">
+                  <p className="text-sm font-medium text-white">Text Support</p>
+                  <p className="text-xs text-neutral-400">Available 24/7</p>
                 </div>
-                <p className="font-semibold">Text Support</p>
-                <p className="text-sm text-primary-100">Available 24/7</p>
               </div>
             </div>
           </div>
-        </Card>
+        </FadeIn>
       </Container>
     </section>
   )

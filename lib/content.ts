@@ -6,7 +6,7 @@ export const heroContent = {
   subheadline:
     'Join thousands of professional drivers and riders who are building direct connections on the only social media platform exclusively designed for the gig economy.',
   primaryCTA: {
-    text: 'Get Your Free RSG Membership + Digital Business Card',
+    text: 'Join RSG Free + Get Digital Card',
     href: '#signup',
   },
   secondaryCTA: {

@@ -42,7 +42,6 @@ export function HeroSection() {
                   href={heroContent.primaryCTA.href}
                   icon={<ArrowRight className="h-5 w-5" />}
                   iconPosition="right"
-                  className="shadow-xl shadow-primary-500/20"
                 >
                   {heroContent.primaryCTA.text}
                 </Button>

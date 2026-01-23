@@ -56,18 +56,18 @@ export function DigitalBusinessCard() {
           </Button>
         </div>
 
-        {/* Business Card Preview */}
-        <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-md overflow-hidden rounded-xl shadow-2xl transition-all hover:-translate-y-1 hover:shadow-3xl">
-            <Image
-              src="/images/business-cards/card-1.png"
-              alt="Sample Business Card Preview"
-              width={600}
-              height={400}
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
+         {/* Business Card Preview */}
+         <div className="flex items-center justify-center">
+           <div className="relative w-full max-w-md overflow-hidden rounded-xl shadow-2xl transition-all hover:-translate-y-1 hover:shadow-3xl">
+             <Image
+               src="/images/mockups/driver-profile-1.jpeg"
+               alt="Driver Profile Preview"
+               width={600}
+               height={800}
+               className="w-full h-auto"
+             />
+           </div>
+         </div>
       </div>
     </div>
   )

@@ -106,12 +106,18 @@ export function HeroSection() {
                    {/* Screen Content */}
                    <div className="relative h-[600px] w-full bg-white overflow-hidden flex flex-col">
                       {/* Header Image Area */}
-                      <div className="h-32 bg-gradient-to-br from-primary-500 to-primary-600 relative">
-                        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 h-20 w-20 rounded-full border-4 border-white bg-neutral-200 shadow-md overflow-hidden">
-                           {/* Avatar Placeholder */}
-                           <div className="w-full h-full bg-neutral-300 flex items-center justify-center text-neutral-500 text-xs">Photo</div>
-                        </div>
-                      </div>
+                       <div className="h-32 bg-gradient-to-br from-primary-500 to-primary-600 relative">
+                         <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 h-20 w-20 rounded-full border-4 border-white bg-white shadow-md overflow-hidden">
+                            {/* Avatar Image */}
+                            <Image
+                              src="/images/testimonials/avatar-2.png"
+                              alt="Driver Avatar"
+                              width={80}
+                              height={80}
+                              className="w-full h-full object-cover"
+                            />
+                         </div>
+                       </div>
 
                       {/* Profile Details */}
                       <div className="mt-12 px-6 text-center space-y-1">

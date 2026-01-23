@@ -60,7 +60,7 @@ export function HeroSection() {
 
             {/* Benefits List */}
             <FadeIn delay={0.4}>
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-3 sm:grid-cols-2 mb-6">
                 {heroContent.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="flex-shrink-0 flex h-5 w-5 items-center justify-center rounded-full bg-success-100 text-success-600">
@@ -71,6 +71,26 @@ export function HeroSection() {
                     </span>
                   </div>
                 ))}
+              </div>
+              
+              {/* Rider CTA Banner */}
+              <div className="rounded-xl bg-gradient-to-r from-accent-50 to-primary-50 p-4 border border-accent-200">
+                <div className="flex items-center gap-3">
+                  <Smartphone className="h-6 w-6 text-primary-600 flex-shrink-0" />
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-neutral-900">
+                      Need a Ride?
+                    </p>
+                    <a 
+                      href="https://BookTheDon.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary-600 hover:text-primary-700 font-medium underline"
+                    >
+                      Book now at BookTheDon.com →
+                    </a>
+                  </div>
+                </div>
               </div>
             </FadeIn>
           </div>

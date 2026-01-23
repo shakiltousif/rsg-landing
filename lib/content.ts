@@ -10,8 +10,8 @@ export const heroContent = {
     href: '#signup',
   },
   secondaryCTA: {
-    text: 'Learn More',
-    href: '#how-it-works',
+    text: 'Book a Ride Now',
+    href: 'https://BookTheDon.com',
   },
   benefits: [
     'Always Free Membership',
@@ -19,6 +19,10 @@ export const heroContent = {
     'Build Your Transportation Business',
     'Connect Locally, Grow Globally',
   ],
+  riderCTA: {
+    text: 'Need a Ride? Book at BookTheDon.com',
+    href: 'https://BookTheDon.com',
+  },
 }
 
 // Testimonials
@@ -406,42 +410,48 @@ export const sections = {
     forRiders: {
       title: 'For Riders: Find Your Perfect Driver',
       description:
-        'Find and book your favorite professional drivers directly. Browse the RSG Drivers Directory to discover vetted, commercially-insured drivers in your area, view their professional profiles, and save their contact information for future bookings.',
+        'Find and book your favorite professional drivers directly. Browse the RSG Drivers Directory to discover vetted, commercially-insured drivers in your area, view their professional profiles, and save their contact information for future bookings. Book your ride instantly at BookTheDon.com.',
+      bookingCTA: {
+        text: 'Book Your Ride at BookTheDon.com',
+        href: 'https://BookTheDon.com',
+      },
     },
   },
   communityInfluencers: {
     title: 'RSG Community of Influencers',
-    subtitle: 'Learn from the Best in the Business',
+    subtitle: 'You\'re not just joining a platform—you\'re joining a community of successful drivers who share real strategies that work.',
+    description: 'Learn from the Best in the Business',
     leaders: [
       {
         title: 'YouTube Creators',
-        description: 'Weekly income strategies, tax tips, and market insights',
+        description: 'Sharing weekly income strategies, tax tips, and market insights',
       },
       {
         title: 'Facebook Group Moderators',
-        description: 'Live Q&As and success story features',
+        description: 'Hosting live Q&As and success story features',
       },
       {
         title: 'Top Earners',
-        description: 'Exact methods used to maximize income',
+        description: 'Revealing the exact methods they use to maximize income',
       },
       {
         title: 'Market Specialists',
-        description: 'Airport strategies, surge tactics, and premium service techniques',
+        description: 'Breaking down airport strategies, surge tactics, and premium service techniques',
       },
     ],
     benefits: [
       'Exclusive content from proven earners',
       'Weekly strategy sessions and AMAs',
       'Behind-the-scenes looks at six-figure driver businesses',
-      'Direct access to mentors who have built what you are building',
+      'Direct access to mentors who\'ve built what you\'re building',
     ],
+    forRiders: 'Follow your favorite drivers, see their tips and insights, and stay connected with the professionals who get you where you need to go. Book your ride today at BookTheDon.com.',
   },
   donReservations: {
     title: 'The Don Reservations App',
     subtitle: 'Built by Drivers, For Drivers—Technology That Puts YOU First',
     description:
-      'The reservation technology you\'ve been waiting for—working just like Uber and Lyft, but with one critical difference: YOU keep 100% of every fare.',
+      'The Don Reservations app (available on Google and Apple stores) is the industry\'s first app that connects drivers to riders directly while using today\'s familiar rideshare technology. Get your exclusive Personal Driver ID # that connects your riders directly to your Driver ID #, and build your clientele today.',
     whyYouNeedIt: [
       {
         title: 'Build Your Own Business',
@@ -451,7 +461,7 @@ export const sections = {
       {
         title: 'Secure Your Personal Driver ID #',
         description:
-          'Your unique identifier in the RSG ecosystem—your professional credential that proves you\'re verified, commercially-insured, and cannot be replicated.',
+          'Your unique identifier in the RSG ecosystem—your professional credential that proves you\'re verified, commercially insured, and cannot be replicated.',
       },
       {
         title: 'Familiar Technology, Better Economics',
@@ -461,7 +471,7 @@ export const sections = {
     ],
     steps: [
       'Join RideshareGuides.com (FREE)',
-      'Verify your commercial insurance',
+      'Must have a Commercial Insurance for your Riders, to use platform.',
       'Receive your exclusive Personal Driver ID #',
       'Activate your RSG Digital Business Card',
       'Start accepting direct bookings',

@@ -19,6 +19,7 @@ export function FinalCTA() {
 
   const riderBenefits = [
     'Find Verified Professional Drivers',
+    'Book Instantly at BookTheDon.com',
     'Save Your Favorite Drivers',
     'Direct Booking - No Surge Pricing',
     'Better Rates for You & Drivers',
@@ -103,15 +104,27 @@ export function FinalCTA() {
                 </ul>
               </div>
 
-              <Button
-                variant="secondary"
-                size="lg"
-                fullWidth
-                href="#find-drivers"
-                className="w-full border-neutral-700 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white"
-              >
-                Find Your Driver
-              </Button>
+              <div className="space-y-3">
+                <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer" className="block">
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    fullWidth
+                    className="w-full border-accent-500 bg-accent-500 text-white hover:bg-accent-600 hover:border-accent-600"
+                  >
+                    Book a Ride at BookTheDon.com
+                  </Button>
+                </a>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  fullWidth
+                  href="#find-drivers"
+                  className="w-full border-neutral-700 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white"
+                >
+                  Find Your Driver
+                </Button>
+              </div>
             </div>
           </FadeIn>
         </div>

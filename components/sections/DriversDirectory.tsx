@@ -91,8 +91,13 @@ export function DriversDirectory() {
         </Card>
       </div>
 
-      <div className="text-center">
-        <Button variant="primary" size="lg">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center text-center">
+        <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
+          <Button variant="primary" size="lg">
+            Book a Ride at BookTheDon.com
+          </Button>
+        </a>
+        <Button variant="secondary" size="lg">
           Browse Driver Directory
         </Button>
       </div>

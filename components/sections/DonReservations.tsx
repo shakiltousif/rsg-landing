@@ -6,7 +6,7 @@ import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
 import { Button } from '../ui/Button'
 import { FadeIn } from '../animations/FadeIn'
-import { Building2, Hash, Zap, CheckCircle2, Smartphone } from 'lucide-react'
+import { Building2, Hash, Zap, CheckCircle2, Smartphone, Apple } from 'lucide-react'
 import { sections } from '@/lib/content'
 
 export function DonReservations() {
@@ -20,8 +20,51 @@ export function DonReservations() {
             eyebrow="100% of Every Fare"
             heading={donReservations.title}
             description={donReservations.description}
-            className="mb-12"
+            className="mb-8"
           />
+        </FadeIn>
+
+        {/* App Logo and Download Buttons */}
+        <FadeIn delay={0.1}>
+          <div className="mb-12 flex flex-col items-center text-center">
+            <div className="mb-6">
+              <Image
+                src="/images/logos/the-don-logo.jpeg"
+                alt="The Don - The Drivers Owner's Network"
+                width={400}
+                height={200}
+                className="mx-auto rounded-xl"
+              />
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://apps.apple.com/app/don-reservations" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-lg bg-black px-6 py-3 text-white transition-transform hover:scale-105 hover:shadow-lg"
+              >
+                <Apple className="h-8 w-8" />
+                <div className="text-left">
+                  <div className="text-xs">Download on the</div>
+                  <div className="text-lg font-semibold leading-tight">App Store</div>
+                </div>
+              </a>
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.donreservations" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-lg bg-black px-6 py-3 text-white transition-transform hover:scale-105 hover:shadow-lg"
+              >
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                </svg>
+                <div className="text-left">
+                  <div className="text-xs">GET IT ON</div>
+                  <div className="text-lg font-semibold leading-tight">Google Play</div>
+                </div>
+              </a>
+            </div>
+          </div>
         </FadeIn>
 
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
@@ -68,13 +111,12 @@ export function DonReservations() {
               </Card>
             </FadeIn>
 
-            {/* NYC TLC Note */}
+            {/* Disclaimer */}
             <FadeIn delay={0.5}>
               <div className="rounded-xl bg-accent-50 p-4 border border-accent-100 flex gap-3">
                  <CheckCircle2 className="h-5 w-5 text-accent-600 flex-shrink-0 mt-0.5" />
                  <p className="text-sm font-medium text-accent-900">
-                  <strong>For NYC TLC Drivers:</strong> The Don Reservations system is
-                  fully compliant with TLC regulations for pre-arranged rides.
+                  <strong>Disclaimer:</strong> The Don Reservations is a SaaS company and not a rideshare company. All drivers operate as independent contractors of their own business. NYC TLC drivers are required to have active TLC permits as well as TLC commercial plates and insurance to use the platform.
                 </p>
               </div>
             </FadeIn>
@@ -102,37 +144,25 @@ export function DonReservations() {
                       />
                    </div>
                 </div>
-
-                {/* Floating Action/Success Badge */}
-                <div className="absolute -bottom-6 -left-6 z-20 rounded-2xl bg-white p-4 shadow-xl border border-neutral-100 flex items-center gap-3 animate-bounce duration-[4000ms]">
-                   <div className="h-10 w-10 rounded-full bg-success-100 flex items-center justify-center text-success-600">
-                      <Zap className="h-5 w-5" />
-                   </div>
-                   <div>
-                      <p className="text-xs font-bold text-neutral-900">100% Earnings</p>
-                      <p className="text-[10px] text-neutral-500">No Platform Fees</p>
-                   </div>
-                </div>
-
-                {/* Floating Booking Badge */}
-                <div className="absolute top-1/4 -right-8 z-20 rounded-2xl bg-white p-4 shadow-xl border border-neutral-100 flex items-center gap-3">
-                   <div className="h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
-                      <Smartphone className="h-5 w-5" />
-                   </div>
-                   <div>
-                      <p className="text-xs font-bold text-neutral-900">Direct Booking</p>
-                      <p className="text-[10px] text-neutral-500">Secure & Instant</p>
-                   </div>
-                </div>
              </div>
 
-             <div className="mt-12 text-center lg:text-left flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="primary" size="lg" className="shadow-xl" href="#signup">
-                  Get Your Driver ID #
-                </Button>
-                <Button variant="secondary" size="lg">
-                  Learn More
-                </Button>
+             <div className="mt-12 text-center lg:text-left space-y-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button variant="primary" size="lg" className="shadow-xl" href="#signup">
+                    Get Your Driver ID #
+                  </Button>
+                  <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" size="lg" className="w-full sm:w-auto">
+                      Book a Ride Now
+                    </Button>
+                  </a>
+                </div>
+                <p className="text-center text-sm text-neutral-600">
+                  <span className="font-semibold">Riders:</span> Book your ride instantly at{' '}
+                  <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">
+                    BookTheDon.com
+                  </a>
+                </p>
              </div>
           </FadeIn>
         </div>

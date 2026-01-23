@@ -1,6 +1,29 @@
+# RSG Robots.txt for search engine crawlers
 # https://www.robotstxt.org/robotstxt.html
+
+# Allow all bots by default
 User-agent: *
 Allow: /
 
-# Sitemap
+# Disallow private paths
+Disallow: /admin/
+Disallow: /.next/
+Disallow: /.env
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*sort=
+Disallow: /search?
+
+# Specific crawler permissions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap location
 Sitemap: https://rideshareguides.com/sitemap.xml
+Sitemap: https://rideshareguides.com/sitemap-index.xml

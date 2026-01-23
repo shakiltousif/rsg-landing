@@ -1,0 +1,16 @@
+/* TEAM */
+Organization: RideShare Guides
+Twitter: @rideshareguides
+Location: Remote
+
+/* THANKS */
+Technology: Next.js, React, TypeScript, Tailwind CSS
+Design: Modern Web Design Practices
+Community: Rideshare Drivers & Riders
+
+/* SITE */
+Language: English
+Standards: HTML5, CSS3, Responsive Design
+Components: Next.js, React
+Hosting: Vercel
+Last Updated: 2025-01-23

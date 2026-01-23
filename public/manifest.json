@@ -1,0 +1,82 @@
+{
+  "name": "RideShare Guides - Professional Rideshare Business Platform",
+  "short_name": "RideShare Guides",
+  "description": "Build your professional rideshare business with digital business cards, personal driver IDs, and direct booking system. Join thousands of drivers and riders keeping 100% of earnings.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1F2937",
+  "background_color": "#FFFFFF",
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/screenshot-2.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "purpose": "any"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/images/logos/rsg-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logos/rsg-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book a Ride",
+      "short_name": "Book Ride",
+      "description": "Book a ride at BookTheDon.com",
+      "url": "https://BookTheDon.com",
+      "icons": [
+        {
+          "src": "/images/logos/the-don-logo.jpeg",
+          "sizes": "192x192",
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Join RSG",
+      "short_name": "Join",
+      "description": "Join RideShare Guides community",
+      "url": "/#signup",
+      "icons": [
+        {
+          "src": "/images/logos/rsg-logo.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.donreservations",
+      "id": "com.donreservations"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/don-reservations"
+    }
+  ]
+}

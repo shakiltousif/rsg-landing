@@ -98,7 +98,7 @@ export function HowItWorks() {
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="flex items-center gap-2">
             <Check className="h-5 w-5 text-success-600" />
-            <span className="text-sm text-neutral-700">Commercial insurance (TLC, TCP, etc.)</span>
+            <span className="text-sm text-neutral-700">Commercial insurance (NYC Drivers - TLC Permit and TLC plate required)</span>
           </div>
           <div className="flex items-center gap-2">
             <Check className="h-5 w-5 text-success-600" />

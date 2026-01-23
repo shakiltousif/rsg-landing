@@ -40,7 +40,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <h3 className="mb-4 text-2xl font-bold text-white">RSG</h3>
             <p className="mb-4 text-sm">
-              The professional platform for rideshare drivers and riders worldwide.
+              The professional platform for independent contractors, drivers and riders worldwide.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">

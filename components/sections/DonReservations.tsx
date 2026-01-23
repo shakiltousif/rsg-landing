@@ -16,52 +16,62 @@ export function DonReservations() {
     <section className="py-16 lg:py-24 bg-neutral-50">
       <Container>
         <FadeIn>
-          <SectionHeader
-            eyebrow="100% of Every Fare"
-            heading={donReservations.title}
-            description={donReservations.description}
-            className="mb-8"
-          />
+          <div className="text-center mb-8">
+            <div className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-2">
+              100% OF EVERY FARE
+            </div>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 mb-2">
+              (The Don - The Driver Owned Network) Reservations
+            </h2>
+            <p className="text-xs sm:text-sm text-neutral-600 font-medium mb-4">
+              The Don Reservations App
+            </p>
+            <p className="mx-auto max-w-2xl text-base sm:text-lg text-neutral-600">
+              {donReservations.description}
+            </p>
+          </div>
         </FadeIn>
 
         {/* App Logo and Download Buttons */}
         <FadeIn delay={0.1}>
           <div className="mb-12 flex flex-col items-center text-center">
-            <div className="mb-6">
-              <Image
-                src="/images/logos/the-don-logo.jpeg"
-                alt="The Don - The Drivers Owner's Network"
-                width={400}
-                height={200}
-                className="mx-auto rounded-xl"
-              />
-            </div>
+             <div className="mb-6">
+               <Image
+                 src="/images/logos/the-don-logo.jpeg"
+                 alt="The Don - The Drivers Owner's Network"
+                 width={400}
+                 height={200}
+                 className="mx-auto rounded-xl"
+               />
+             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="https://apps.apple.com/app/don-reservations" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-lg bg-black px-6 py-3 text-white transition-transform hover:scale-105 hover:shadow-lg"
+                className="inline-flex transition-transform hover:scale-105"
               >
-                <Apple className="h-8 w-8" />
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="text-lg font-semibold leading-tight">App Store</div>
-                </div>
+                <Image
+                  src="/images/badges/app-store-badge.png"
+                  alt="Download on the App Store"
+                  width={180}
+                  height={60}
+                  className="h-auto w-auto"
+                />
               </a>
               <a 
                 href="https://play.google.com/store/apps/details?id=com.donreservations" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-lg bg-black px-6 py-3 text-white transition-transform hover:scale-105 hover:shadow-lg"
+                className="inline-flex transition-transform hover:scale-105"
               >
-                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div className="text-left">
-                  <div className="text-xs">GET IT ON</div>
-                  <div className="text-lg font-semibold leading-tight">Google Play</div>
-                </div>
+                <Image
+                  src="/images/badges/play-store-badge.png"
+                  alt="Get it on Google Play"
+                  width={180}
+                  height={60}
+                  className="h-auto w-auto"
+                />
               </a>
             </div>
           </div>

@@ -30,12 +30,12 @@ export function DriversDirectory() {
             ))}
           </div>
           <Button variant="primary" size="lg">
-            Create Your Free Directory Listing
+            Create Your Free RSG Directory Listing
           </Button>
         </div>
 
-        {/* Directory Preview */}
-        <div className="flex items-center justify-center">
+        {/* Directory Preview - Commented out for now */}
+        {/* <div className="flex items-center justify-center">
           <div className="overflow-hidden rounded-xl shadow-2xl ring-1 ring-neutral-200">
             <Image
               src="/images/mockups/directory-desktop.png"
@@ -45,7 +45,7 @@ export function DriversDirectory() {
               className="w-full h-auto"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
@@ -29,9 +30,18 @@ export function MembershipComparison() {
                   <th className="px-4 py-4 text-left font-semibold text-neutral-900">
                     Feature
                   </th>
-                  <th className="bg-accent-50 px-4 py-4 text-center font-bold text-accent-900">
-                    {providers.rsg.name}
-                  </th>
+                   <th className="bg-accent-50 px-4 py-4 text-center font-bold text-accent-900">
+                     <div className="flex flex-col items-center gap-2">
+                       <Image
+                         src="/images/logos/rsg-logo.png"
+                         alt="RSG Logo"
+                         width={40}
+                         height={40}
+                         className="h-10 w-auto"
+                       />
+                       <div className="text-xs font-normal text-accent-700">(free membership always)</div>
+                     </div>
+                   </th>
                   <th className="px-4 py-4 text-center font-semibold text-neutral-700">
                     {providers.blinq.name}
                   </th>
@@ -68,14 +78,32 @@ export function MembershipComparison() {
           {/* Mobile Cards */}
           <div className="space-y-6 lg:hidden">
             {Object.entries(providers).map(([key, provider]) => (
-              <Card
-                key={key}
-                variant={'highlight' in provider && provider.highlight ? 'elevated' : 'bordered'}
-                className={'highlight' in provider && provider.highlight ? 'border-2 border-accent-500' : ''}
-              >
-                <h3 className="mb-4 text-xl font-bold text-neutral-900">
-                  {provider.name}
-                </h3>
+               <Card
+                 key={key}
+                 variant={'highlight' in provider && provider.highlight ? 'elevated' : 'bordered'}
+                 className={'highlight' in provider && provider.highlight ? 'border-2 border-accent-500' : ''}
+               >
+                 <div className="mb-4 flex items-center gap-3">
+                   {key === 'rsg' && (
+                     <Image
+                       src="/images/logos/rsg-logo.png"
+                       alt="RSG Logo"
+                       width={40}
+                       height={40}
+                       className="h-10 w-auto"
+                     />
+                   )}
+                   <div>
+                     {key !== 'rsg' && (
+                       <h3 className="text-xl font-bold text-neutral-900">
+                         {provider.name}
+                       </h3>
+                     )}
+                     {key === 'rsg' && (
+                       <p className="text-xs text-accent-700">(free membership always)</p>
+                     )}
+                   </div>
+                 </div>
                 <div className="space-y-3">
                   {features.map((feature, index) => (
                     <div key={index} className="flex items-center justify-between">

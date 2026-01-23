@@ -35,24 +35,24 @@ export function HowItWorks() {
                 <CreditCard className="h-5 w-5 text-primary-600" />
               </div>
               <div>
-                <h4 className="font-semibold text-neutral-900">Digital Business Card</h4>
+                <h4 className="font-semibold text-neutral-900">RSG Digital Business Card</h4>
                 <p className="text-sm text-neutral-600">
                   Professional card with QR code, vehicle info, and your Personal Driver ID #
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-4">
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-success-100">
-                <Calendar className="h-5 w-5 text-success-600" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-neutral-900">The Don Reservations</h4>
-                <p className="text-sm text-neutral-600">
-                  Accept and manage direct bookings, keep 100% of every fare
-                </p>
-              </div>
-            </div>
+             <div className="flex gap-4">
+               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-success-100">
+                 <Calendar className="h-5 w-5 text-success-600" />
+               </div>
+               <div>
+                 <h4 className="font-semibold text-neutral-900">The Don Reservations app</h4>
+                 <p className="text-sm text-neutral-600">
+                   Accept and manage direct bookings, keep 100% of every fare
+                 </p>
+               </div>
+             </div>
 
             <div className="flex gap-4">
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent-100">
@@ -66,17 +66,17 @@ export function HowItWorks() {
               </div>
             </div>
 
-            <div className="flex gap-4">
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary-100">
-                <MessageCircle className="h-5 w-5 text-primary-600" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-neutral-900">Community Access</h4>
-                <p className="text-sm text-neutral-600">
-                  Connect with top earners, share tips, learn strategies
-                </p>
-              </div>
-            </div>
+             <div className="flex gap-4">
+               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary-100">
+                 <MessageCircle className="h-5 w-5 text-primary-600" />
+               </div>
+               <div>
+                 <h4 className="font-semibold text-neutral-900">Access to RSG Social Media Platform</h4>
+                 <p className="text-sm text-neutral-600">
+                   Connect with top earners, share tips, learn strategies
+                 </p>
+               </div>
+             </div>
           </div>
         </div>
 

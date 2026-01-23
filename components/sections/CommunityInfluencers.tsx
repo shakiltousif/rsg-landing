@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
 import { FadeIn } from '../animations/FadeIn'
 import { ScrollReveal } from '../animations/ScrollReveal'
-import { Youtube, Users, TrendingUp, Target, Check } from 'lucide-react'
+import { Youtube, Users, TrendingUp, Target, Check, PlayCircle } from 'lucide-react'
 import { sections } from '@/lib/content'
 
 export function CommunityInfluencers() {
@@ -34,6 +35,50 @@ export function CommunityInfluencers() {
             <h3 className="text-center text-2xl font-bold text-neutral-900 lg:text-3xl">
               {communityInfluencers.description}
             </h3>
+          </FadeIn>
+
+          {/* Vlog Section */}
+          <FadeIn delay={0.15}>
+            <Card variant="elevated" className="overflow-hidden bg-gradient-to-br from-primary-900 to-primary-800 text-white">
+              <div className="p-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <PlayCircle className="h-6 w-6 text-accent-400" />
+                  <h4 className="text-lg font-bold">Watch Our Influencers in Action</h4>
+                </div>
+                <p className="text-sm mb-6 text-primary-100">
+                  See how our community leaders are earning, growing, and helping others succeed. Join the network and get featured!
+                </p>
+                
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="relative group overflow-hidden rounded-lg">
+                      <Image
+                        src={`/images/vlogs/vlog-${i}.png`}
+                        alt={`Influencer vlog ${i}`}
+                        width={300}
+                        height={200}
+                        className="w-full h-auto object-cover transition-transform group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                        <PlayCircle className="h-12 w-12 text-white opacity-75 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="text-center">
+                  <a
+                    href="https://dev.rideshareguides.com/vlogs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+                  >
+                    <PlayCircle className="h-5 w-5" />
+                    Watch More Vlogs & Join Our Community
+                  </a>
+                </div>
+              </div>
+            </Card>
           </FadeIn>
 
           {/* Featured Community Leaders Section */}

@@ -9,9 +9,9 @@ import { FadeIn } from '../animations/FadeIn'
 
 export function FinalCTA() {
   const driverBenefits = [
-    'FREE Digital Business Card',
+    'RSG Digital Business Card (no cost for members)',
     'Your Personal Driver ID #',
-    'Access to The Don Reservations',
+    'Access to The Don Reservations app',
     'Listed in RSG Directory',
     'Community & Networking',
     'Keep 100% of Your Earnings',

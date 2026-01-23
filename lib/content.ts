@@ -2,7 +2,7 @@ import type { Testimonial, FAQ } from '@/types'
 
 // Hero Section Content
 export const heroContent = {
-  headline: 'Your Professional Rideshare Business Starts Here',
+  headline: 'Your Professional Transportation Business Starts Today',
   subheadline:
     'Join thousands of professional drivers and riders who are building direct connections on the only social media platform exclusively designed for the gig economy.',
   primaryCTA: {
@@ -60,7 +60,7 @@ export const testimonials: Testimonial[] = [
 // Membership Comparison Table
 export const membershipComparison = {
   features: [
-    'Digital Business Card',
+    'RSG Digital Business Card',
     'Personal Driver ID #',
     'Direct Booking System',
     'Directory Listing',
@@ -470,7 +470,7 @@ export const sections = {
       },
     ],
     steps: [
-      'Join RideshareGuides.com (FREE)',
+      'Join RideShareGuides.com ( Free Membership)',
       'Must have a Commercial Insurance for your Riders, to use platform.',
       'Receive your exclusive Personal Driver ID #',
       'Activate your RSG Digital Business Card',
@@ -500,7 +500,7 @@ export const sections = {
       icon: 'MessageSquare',
       title: 'Forums',
       features: [
-        'Market-specific forums (New York, LA, Chicago, etc.)',
+        'Market-specific forums (ex. NYC, Miami…)',
         'Vehicle advice and maintenance',
         'Tax and business strategy',
         'Customer service excellence',
@@ -510,7 +510,7 @@ export const sections = {
       icon: 'ShoppingBag',
       title: 'Classifieds',
       features: [
-        'Vehicles for sale (rideshare-ready)',
+        'Vehicles for sale & Rentals listed',
         'Lease takeovers and financing options',
         'Equipment and accessories',
         'Partnership opportunities',

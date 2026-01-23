@@ -42,9 +42,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Digital Business Card */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 Digital Business Card</h3>
+       {/* Digital Business Card */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 RSG Digital Business Card</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.digitalCard).map((faq, idx) => ({
             id: `card-${idx}`,

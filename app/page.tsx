@@ -48,14 +48,14 @@ export default function Home() {
       <Header />
 
       <main className="relative min-h-screen">
-        <HeroSection />
-        <DigitalBusinessCard />
-        <CommunityInfluencers />
-        <DonReservations />
-        <DriversDirectory />
-        <HowItWorks />
-        <MembershipComparison />
-        <Testimonials />
+       <HeroSection />
+         <DigitalBusinessCard />
+         <MembershipComparison />
+         <CommunityInfluencers />
+         <DonReservations />
+         <DriversDirectory />
+         <HowItWorks />
+         <Testimonials />
         <ComingSoon />
         <FAQSection />
         <FinalCTA />

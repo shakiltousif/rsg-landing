@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@rideshareguides',
     creator: '@rideshareguides',
-    title: 'RSG - Your Professional Rideshare Business Starts Here',
+    title: 'RSG - Your Professional Transportation Business Starts Today',
     description: 'Join thousands of drivers keeping 100% of earnings with direct bookings. Free membership, digital business card, and Personal Driver ID #. Book rides at BookTheDon.com',
     images: ['https://rideshareguides.com/images/twitter-card.jpg'],
   },

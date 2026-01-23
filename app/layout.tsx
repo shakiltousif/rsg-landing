@@ -59,22 +59,22 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://rideshareguides.com',
     siteName: 'RideShare Guides',
-    title: 'RSG - Professional Rideshare Business Platform | Free Digital Business Card',
+    title: 'RSG - Professional Rideshare Business Platform | Free Digital Business Card & Personal Driver ID',
     description: 'Build your professional rideshare business with FREE digital business card, Personal Driver ID #, and direct booking system. Keep 100% of your earnings. Available on iOS & Android.',
     images: [
       {
-        url: 'https://rideshareguides.com/images/og-image.jpg',
+        url: '/images/og-image-large.png',
         width: 1200,
         height: 630,
         alt: 'RSG Platform - Digital Business Cards for Professional Drivers',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
       {
-        url: 'https://rideshareguides.com/images/og-image-square.jpg',
-        width: 800,
-        height: 800,
+        url: '/images/og-image.png',
+        width: 512,
+        height: 512,
         alt: 'RSG Logo - Professional Rideshare Community',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     creator: '@rideshareguides',
     title: 'RSG - Your Professional Transportation Business Starts Today',
     description: 'Join thousands of drivers keeping 100% of earnings with direct bookings. Free membership, digital business card, and Personal Driver ID #. Book rides at BookTheDon.com',
-    images: ['https://rideshareguides.com/images/twitter-card.jpg'],
+    images: ['/images/og-image-large.png'],
   },
   robots: {
     index: true,
@@ -127,6 +127,14 @@ export default function RootLayout({
       <head>
         {/* Manifest for PWA */}
         <link rel="manifest" href="/manifest.json" />
+        
+        {/* Essential Meta Tags for SEO */}
+        <meta property="og:image" content="https://rsg-landing-prod.vercel.app/images/og-image-large.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:image" content="https://rsg-landing-prod.vercel.app/images/og-image-large.png" />
+        <meta name="twitter:card" content="summary_large_image" />
         
         {/* Preconnect to external resources */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

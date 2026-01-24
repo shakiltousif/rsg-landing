@@ -16,7 +16,7 @@ export function DriversDirectory() {
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
         {/* Benefits List */}
         <div className="space-y-6">
-          <h3 className="text-2xl font-bold text-neutral-900">
+          <h3 className="text-4xl font-black text-neutral-900 sm:text-5xl lg:text-6xl">
             {driversDirectory.forDrivers.title}
           </h3>
           <div className="space-y-4">
@@ -34,8 +34,8 @@ export function DriversDirectory() {
           </Button>
         </div>
 
-        {/* Directory Preview - Commented out for now */}
-        {/* <div className="flex items-center justify-center">
+        {/* Directory Preview */}
+        <div className="flex items-center justify-center">
           <div className="overflow-hidden rounded-xl shadow-2xl ring-1 ring-neutral-200">
             <Image
               src="/images/mockups/directory-desktop.png"
@@ -45,7 +45,7 @@ export function DriversDirectory() {
               className="w-full h-auto"
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ export function Header() {
           : 'bg-transparent'
       )}
     >
-      <Container>
+      <Container >
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">

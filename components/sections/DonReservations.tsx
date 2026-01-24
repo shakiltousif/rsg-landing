@@ -17,14 +17,24 @@ export function DonReservations() {
       <Container>
         <FadeIn>
           <div className="text-center mb-8">
-            <div className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-2">
+            <div className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-4">
               100% OF EVERY FARE
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 mb-2">
-              (The Don - The Driver Owned Network) Reservations
+            {/* Logo as Header */}
+            <div className="mb-6">
+              <Image
+                src="/images/logos/the-don-logo.jpeg"
+                alt="The Don - The Drivers Owner's Network"
+                width={400}
+                height={200}
+                className="mx-auto rounded-xl"
+              />
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-2">
+              The Don Reservations app
             </h2>
-            <p className="text-xs sm:text-sm text-neutral-600 font-medium mb-4">
-              The Don Reservations App
+            <p className="text-base sm:text-lg text-neutral-600 font-medium mb-4">
+              aka The Driver-Owned Network app
             </p>
             <p className="mx-auto max-w-2xl text-base sm:text-lg text-neutral-600">
               {donReservations.description}
@@ -32,18 +42,9 @@ export function DonReservations() {
           </div>
         </FadeIn>
 
-        {/* App Logo and Download Buttons */}
+        {/* Download Buttons */}
         <FadeIn delay={0.1}>
           <div className="mb-12 flex flex-col items-center text-center">
-             <div className="mb-6">
-               <Image
-                 src="/images/logos/the-don-logo.jpeg"
-                 alt="The Don - The Drivers Owner's Network"
-                 width={400}
-                 height={200}
-                 className="mx-auto rounded-xl"
-               />
-             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="https://apps.apple.com/app/don-reservations" 

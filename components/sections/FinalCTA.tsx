@@ -45,9 +45,9 @@ export function FinalCTA() {
         </FadeIn>
 
         {/* Benefits Grid */}
-        <div className="mb-20 grid gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="mb-20 grid gap-8 lg:grid-cols-2 lg:gap-12 justify-items-center">
           {/* Drivers Card */}
-          <FadeIn delay={0.1} className="h-full">
+          <FadeIn delay={0.1} className="h-full w-full max-w-lg lg:max-w-none">
             <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl bg-white p-8 shadow-2xl ring-1 ring-white/10 sm:p-10">
               <div>
                 <div className="mb-6 flex items-center gap-4">
@@ -82,7 +82,7 @@ export function FinalCTA() {
           </FadeIn>
 
           {/* Riders Card */}
-          <FadeIn delay={0.2} className="h-full">
+          <FadeIn delay={0.2} className="h-full w-full max-w-lg lg:max-w-none">
             <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl bg-white/5 p-8 shadow-2xl ring-1 ring-white/10 backdrop-blur-sm sm:p-10">
               <div>
                 <div className="mb-6 flex items-center gap-4">

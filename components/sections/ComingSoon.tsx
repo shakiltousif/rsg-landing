@@ -21,8 +21,8 @@ export function ComingSoon() {
         <FadeIn>
           <SectionHeader
             eyebrow="What's Next"
-            heading="Coming Soon"
-            description="We're constantly building new features to help you grow your transportation business."
+            heading="Future Features Coming to RSG!"
+            description="The only Social Media Platform exclusively for independent contractors."
             className="mb-12"
           />
         </FadeIn>
@@ -58,7 +58,7 @@ export function ComingSoon() {
               Join Free to Get Early Access
             </Button>
             <p className="mt-4 text-sm text-neutral-600">
-              RSG members get first access to all new features
+              Join RSG free to get your Digital Business Card, Driver ID, and early access to Forums, Blogs, Travel Discounts & Merchandise
             </p>
           </div>
         </FadeIn>

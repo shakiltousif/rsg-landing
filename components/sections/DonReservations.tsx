@@ -136,7 +136,7 @@ export function DonReservations() {
           {/* Right: App Preview Mockup */}
           <FadeIn delay={0.3} className="relative">
              {/* Decorative Elements */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-primary-100/50 blur-3xl pointer-events-none" />
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[120%] rounded-full bg-primary-100/50 blur-3xl pointer-events-none" />
              
              <div className="relative mx-auto w-full max-w-[320px]">
                 {/* Phone Frame */}

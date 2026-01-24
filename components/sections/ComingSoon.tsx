@@ -16,7 +16,7 @@ export function ComingSoon() {
   }
 
   return (
-    <section className="bg-gradient-to-br from-neutral-50 to-primary-50 py-16 lg:py-24">
+    <section className="bg-gradient-to-br from-neutral-50 to-primary-50 py-10 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeader

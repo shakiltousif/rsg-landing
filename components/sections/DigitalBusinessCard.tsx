@@ -132,7 +132,7 @@ export function DigitalBusinessCard() {
   ]
 
   return (
-    <section id="features" className="py-16 lg:py-24">
+    <section id="features" className="py-10 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeader

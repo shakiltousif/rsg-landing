@@ -13,7 +13,7 @@ export function DonReservations() {
   const { donReservations } = sections
 
   return (
-    <section className="py-16 lg:py-24 bg-neutral-50">
+    <section className="py-10 lg:py-24 bg-neutral-50">
       <Container>
         <FadeIn>
           <div className="text-center mb-8">

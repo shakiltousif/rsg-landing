@@ -10,7 +10,7 @@ export function MembershipComparison() {
   const { features, providers, value } = membershipComparison
 
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-10 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeader

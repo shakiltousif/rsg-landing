@@ -198,7 +198,7 @@ export function FAQSection() {
   }, [searchQuery])
 
   return (
-    <section id="faq" className="py-16 lg:py-24">
+    <section id="faq" className="py-10 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeader

@@ -1,0 +1,417 @@
+{
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "joinFree": "Rejoindre Gratuitement",
+    "bookNow": "Réserver Maintenant",
+    "forDrivers": "Pour les Chauffeurs",
+    "forRiders": "Pour les Passagers",
+    "general": "Général",
+    "comingSoon": "Bientôt Disponible",
+    "free": "GRATUIT",
+    "driver": "Chauffeur",
+    "rider": "Passager"
+  },
+  "languageBanner": {
+    "detected": "Nous avons détecté que vous préférez peut-être {language}.",
+    "switchQuestion": "Voulez-vous changer?",
+    "switchButton": "Passer au {language}",
+    "dismiss": "Rester en Français"
+  },
+  "header": {
+    "brand": "RideShare Guides",
+    "menu": {
+      "howItWorks": "Comment Ça Marche",
+      "features": "Fonctionnalités",
+      "faq": "FAQ",
+      "joinFree": "Rejoindre Gratuitement"
+    }
+  },
+  "hero": {
+    "badge": "La Plateforme #1 pour les Chauffeurs Indépendants",
+    "headline": "Votre Entreprise de Transport Professionnelle Commence Aujourd'hui",
+    "subheadline": "Rejoignez des milliers de chauffeurs et passagers professionnels qui construisent des connexions directes sur la seule plateforme de médias sociaux conçue exclusivement pour l'économie des petits boulots.",
+    "primaryCTA": "Rejoignez RSG Gratuitement + Obtenez Votre Carte Digitale",
+    "secondaryCTA": "Réserver un Trajet Maintenant",
+    "benefits": {
+      "alwaysFree": "Adhésion Toujours Gratuite",
+      "worldwide": "Pour Chauffeurs et Passagers du Monde Entier",
+      "buildBusiness": "Construisez Votre Entreprise de Transport",
+      "connectGlobally": "Connectez-vous Localement, Grandissez Globalement"
+    },
+    "riderCTA": {
+      "title": "Besoin d'un Trajet?",
+      "subtitle": "Réservez votre trajet instantanément avec des chauffeurs professionnels vérifiés",
+      "button": "Réservez sur BookTheDon.com"
+    }
+  },
+  "digitalBusinessCard": {
+    "eyebrow": "Votre Identité Professionnelle",
+    "heading": "Carte de Visite Digitale RSG",
+    "forDrivers": {
+      "title": "Pour les Chauffeurs: Votre Identité Professionnelle",
+      "benefits": {
+        "headshot": "Photo professionnelle et photo du véhicule",
+        "driverId": "Votre ID Chauffeur Personnel # exclusif",
+        "qrCode": "Code QR pour réservations instantanées",
+        "directLink": "Lien direct vers le système The Don Reservations",
+        "shareable": "Partageable sur toutes les plateformes sociales",
+        "directory": "Inscrit dans le Répertoire Global des Chauffeurs RSG"
+      },
+      "value": "Les cartes de visite digitales professionnelles coûtent $99-299/an ailleurs. La vôtre est incluse GRATUITEMENT avec l'adhésion RSG.",
+      "howItWorks": "Partagez votre carte après chaque trajet, publiez-la sur les réseaux sociaux, ou laissez les passagers vous trouver dans notre répertoire. Chaque scan est un client récurrent potentiel—construisant VOTRE entreprise, pas celle d'une plateforme."
+    },
+    "forRiders": {
+      "title": "Pour les Passagers: Trouvez Votre Chauffeur Parfait",
+      "description": "Trouvez et réservez vos chauffeurs professionnels préférés directement. Parcourez le Répertoire des Chauffeurs RSG pour découvrir des chauffeurs vérifiés et assurés commercialement dans votre région, consultez leurs profils professionnels et enregistrez leurs coordonnées pour vos futures réservations. Réservez votre trajet instantanément sur BookTheDon.com.",
+      "bookingCTA": "Réservez Votre Trajet sur BookTheDon.com"
+    }
+  },
+  "communityInfluencers": {
+    "eyebrow": "Rejoignez la Communauté",
+    "heading": "Communauté d'Influenceurs RSG",
+    "subtitle": "Vous ne rejoignez pas seulement une plateforme—vous rejoignez une communauté de chauffeurs à succès qui partagent de vraies stratégies qui fonctionnent.",
+    "description": "Apprenez des Meilleurs du Secteur",
+    "leaders": {
+      "youtube": {
+        "title": "Créateurs YouTube",
+        "description": "Partageant des stratégies de revenus hebdomadaires, conseils fiscaux et perspectives du marché"
+      },
+      "facebook": {
+        "title": "Modérateurs de Groupes Facebook",
+        "description": "Organisant des Q&R en direct et mettant en avant des histoires de succès"
+      },
+      "topEarners": {
+        "title": "Meilleurs Gagnants",
+        "description": "Révélant les méthodes exactes qu'ils utilisent pour maximiser leurs revenus"
+      },
+      "marketSpecialists": {
+        "title": "Spécialistes du Marché",
+        "description": "Décomposant les stratégies aéroportuaires, tactiques de surge et techniques de service premium"
+      }
+    },
+    "benefits": {
+      "exclusive": "Contenu exclusif de gagnants prouvés",
+      "weekly": "Sessions de stratégie hebdomadaires et AMAs",
+      "behindScenes": "Aperçus des coulisses d'entreprises de chauffeurs à six chiffres",
+      "directAccess": "Accès direct aux mentors qui ont construit ce que vous construisez"
+    },
+    "forRiders": "Suivez vos chauffeurs préférés, voyez leurs conseils et perspectives, et restez connecté avec les professionnels qui vous emmènent où vous devez aller. Réservez votre trajet aujourd'hui sur BookTheDon.com."
+  },
+  "donReservations": {
+    "eyebrow": "100% DE CHAQUE TARIF",
+    "heading": "L'application The Don Reservations",
+    "subheading": "alias l'application Driver-Owned Network",
+    "description": "L'application The Don Reservations (disponible sur Google et Apple stores) est la première application de l'industrie qui connecte les chauffeurs aux passagers directement en utilisant la technologie de covoiturage familière d'aujourd'hui. Obtenez votre ID Chauffeur Personnel # exclusif qui connecte vos passagers directement à votre ID Chauffeur #, et construisez votre clientèle aujourd'hui.",
+    "whyYouNeedIt": {
+      "buildBusiness": {
+        "title": "Construisez Votre Propre Entreprise",
+        "description": "Arrêtez de construire la richesse des plateformes. Chaque client que vous convertissez devient VOTRE client, pas celui d'Uber ou de Lyft."
+      },
+      "secureId": {
+        "title": "Sécurisez Votre ID Chauffeur Personnel #",
+        "description": "Votre identifiant unique dans l'écosystème RSG—votre accréditation professionnelle qui prouve que vous êtes vérifié, assuré commercialement, et ne peut pas être répliqué."
+      },
+      "familiarTech": {
+        "title": "Technologie Familière, Meilleure Économie",
+        "description": "Les passagers utilisent le même processus de réservation simple qu'ils connaissent. Vous utilisez des outils de dispatch de niveau professionnel. La différence? Vous êtes le propriétaire de l'entreprise."
+      }
+    },
+    "howToGetStarted": "Comment Commencer",
+    "steps": {
+      "step1": "Rejoignez RideShareGuides.com (Adhésion Gratuite)",
+      "step2": "Vous devez avoir une Assurance Commerciale pour vos Chauffeurs, pour utiliser la plateforme.",
+      "step3": "Recevez votre ID Chauffeur Personnel # exclusif",
+      "step4": "Activez votre Carte de Visite Digitale RSG",
+      "step5": "Commencez à accepter des réservations directes"
+    },
+    "disclaimer": "Avis: The Don Reservations est une entreprise SaaS et non une entreprise de covoiturage. Tous les chauffeurs opèrent comme entrepreneurs indépendants de leur propre entreprise. Les chauffeurs NYC TLC doivent avoir des permis TLC actifs ainsi que des plaques commerciales TLC et une assurance pour utiliser la plateforme.",
+    "getDriverId": "Obtenez Votre ID Chauffeur #",
+    "bookRideNow": "Réserver un Trajet Maintenant",
+    "ridersNote": "Passagers: Réservez votre trajet instantanément sur"
+  },
+  "driversDirectory": {
+    "eyebrow": "Être Découvert",
+    "heading": "Répertoire Gratuit des Chauffeurs RSG",
+    "description": "Votre profil dans un répertoire consultable connectant les chauffeurs professionnels avec les passagers recherchant un service de qualité.",
+    "forDrivers": {
+      "title": "Pour les Chauffeurs: Être Découvert",
+      "benefits": {
+        "freeProfile": "Profil professionnel gratuit dans un répertoire consultable",
+        "showcase": "Présentez vos services, véhicules et spécialités",
+        "ratings": "Affichez des évaluations vérifiées et avis clients",
+        "driverId": "Incluez votre ID Chauffeur Personnel # pour les réservations directes",
+        "availability": "Mettez à jour votre disponibilité et zones de couverture en temps réel",
+        "connect": "Connectez-vous avec des passagers recherchant activement des chauffeurs professionnels"
+      },
+      "cta": "Créez Votre Inscription Gratuite au Répertoire RSG"
+    },
+    "forRiders": {
+      "title": "Pour les Passagers: Trouvez Votre Chauffeur Parfait",
+      "description": "Recherchez dans notre répertoire de chauffeurs professionnels vérifiés et assurés commercialement. Filtrez par emplacement, services, type de véhicule et évaluations pour trouver la correspondance parfaite pour vos besoins de transport.",
+      "features": {
+        "searchLocation": {
+          "title": "Recherche par Emplacement",
+          "description": "Trouvez des chauffeurs professionnels dans votre région"
+        },
+        "verifiedRatings": {
+          "title": "Évaluations Vérifiées",
+          "description": "Consultez les avis de vrais clients"
+        },
+        "directContact": {
+          "title": "Contact Direct",
+          "description": "Réservez directement avec votre chauffeur préféré"
+        }
+      },
+      "bookRide": "Réservez un Trajet sur BookTheDon.com",
+      "browseDirectory": "Parcourir le Répertoire des Chauffeurs"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Simple et Puissant",
+    "heading": "Comment Ça Marche",
+    "description": "Que vous soyez un chauffeur construisant votre entreprise ou un passager cherchant un transport de confiance, RSG simplifie tout.",
+    "forDrivers": {
+      "dashboardTitle": "Votre Tableau de Bord Chauffeur",
+      "features": {
+        "digitalCard": {
+          "title": "Carte de Visite Digitale RSG",
+          "description": "Carte professionnelle avec code QR, info véhicule et votre ID Chauffeur Personnel #"
+        },
+        "donReservations": {
+          "title": "L'application The Don Reservations",
+          "description": "Acceptez et gérez les réservations directes, gardez 100% de chaque tarif"
+        },
+        "earnings": {
+          "title": "Tableau de Bord des Gains",
+          "description": "Suivez les réservations directes, clients récurrents et gains totaux"
+        },
+        "socialMedia": {
+          "title": "Accès à la Plateforme de Médias Sociaux RSG",
+          "description": "Connectez-vous avec les meilleurs gagnants, partagez des conseils, apprenez des stratégies"
+        }
+      },
+      "requirements": {
+        "title": "Exigences",
+        "commercial": "Assurance commerciale (Chauffeurs NYC - Permis TLC et plaque TLC requis)",
+        "registration": "Immatriculation du véhicule actuelle",
+        "background": "Vérification des antécédents approuvée",
+        "licensing": "Licence de la ville (le cas échéant)"
+      },
+      "cta": "Commencer en tant que Chauffeur"
+    },
+    "forRiders": {
+      "features": {
+        "findDrivers": {
+          "title": "Trouver des Chauffeurs",
+          "description": "Parcourez le Répertoire RSG pour trouver des chauffeurs professionnels dans votre région"
+        },
+        "verifyReview": {
+          "title": "Vérifier et Évaluer",
+          "description": "Vérifiez les accréditations du chauffeur, l'assurance et les avis d'autres passagers"
+        },
+        "saveBook": {
+          "title": "Sauvegarder et Réserver",
+          "description": "Scannez les codes QR ou enregistrez les contacts des chauffeurs pour réserver facilement"
+        },
+        "bookDirectly": {
+          "title": "Réserver Directement",
+          "description": "Utilisez le système The Don Reservations pour des réservations sans tracas"
+        },
+        "betterPricing": {
+          "title": "Meilleurs Prix",
+          "description": "Pas de prix de surge, pas de frais de plateforme - juste des tarifs équitables"
+        },
+        "buildTrust": {
+          "title": "Construire la Confiance",
+          "description": "Développez des relations avec vos chauffeurs professionnels préférés"
+        }
+      },
+      "whyLove": {
+        "title": "Pourquoi les Passagers Adorent RSG",
+        "betterRates": "Meilleurs tarifs qu'Uber/Lyft (pas de frais de plateforme)",
+        "favoriteDrivers": "Réservez vos chauffeurs préférés à tout moment",
+        "noSurge": "Pas de surprises de prix de surge",
+        "supportDrivers": "Soutenez les chauffeurs directement (ils gardent 100%)"
+      },
+      "cta": "Trouvez Votre Chauffeur"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Histoires de Succès",
+    "heading": "Ce Que Disent Nos Membres",
+    "quotes": {
+      "jennifer": {
+        "quote": "La Carte de Visite Digitale RSG a changé mon entreprise. Je suis passée de 100% de trajets via plateforme à 40% de réservations directes en 6 mois. Je gagne $800+ de plus par mois juste avec les clients récurrents.",
+        "author": "Jennifer M.",
+        "location": "Houston, TX"
+      },
+      "david": {
+        "quote": "Trouver des chauffeurs professionnels signifiait espérer obtenir la même personne deux fois. Maintenant j'ai 3 chauffeurs enregistrés dans RSG, et je réserve celui qui est disponible. Meilleur service, meilleurs prix.",
+        "author": "David K.",
+        "location": "Miami, FL"
+      },
+      "marcus": {
+        "quote": "Je pensais avoir besoin d'un logiciel coûteux pour gérer une vraie entreprise de transport. RSG m'a donné tout ce dont j'ai besoin—système de réservation, carte de visite, inscription au répertoire—gratuitement. Mon ID Chauffeur Personnel # seul vaut l'adhésion.",
+        "author": "Marcus T.",
+        "location": "Atlanta, GA"
+      },
+      "sarah": {
+        "quote": "En tant que passagère, j'adore soutenir les chauffeurs directement. Le Répertoire RSG facilite la recherche de chauffeurs vérifiés et professionnels, et réserver via The Don Reservations est aussi simple que d'utiliser Uber.",
+        "author": "Sarah L.",
+        "location": "Seattle, WA"
+      }
+    }
+  },
+  "comingSoon": {
+    "eyebrow": "Prochainement",
+    "heading": "Fonctionnalités Futures Arrivant sur RSG!",
+    "description": "La seule Plateforme de Médias Sociaux exclusivement pour les entrepreneurs indépendants.",
+    "features": {
+      "forums": {
+        "title": "Forums",
+        "items": {
+          "marketSpecific": "Forums spécifiques au marché (ex. NYC, Miami...)",
+          "vehicleAdvice": "Conseils véhicules et entretien",
+          "taxStrategy": "Stratégie fiscale et commerciale",
+          "customerService": "Excellence du service client"
+        }
+      },
+      "classifieds": {
+        "title": "Petites Annonces",
+        "items": {
+          "vehicles": "Véhicules à vendre et locations listés",
+          "lease": "Reprises de leasing et options de financement",
+          "equipment": "Équipements et accessoires",
+          "partnerships": "Opportunités de partenariat"
+        }
+      },
+      "flightInfo": {
+        "title": "Informations de Vol",
+        "items": {
+          "liveFlights": "Arrivées de vols en direct et retards",
+          "pickupStrategies": "Meilleures stratégies de prise en charge/dépose",
+          "queueTimes": "Temps de file d'attente aéroport et conseils",
+          "volumeTrends": "Tendances de volume de passagers des compagnies aériennes"
+        }
+      },
+      "blogs": {
+        "title": "Blogs RSG",
+        "items": {
+          "tutorials": "Tutoriels complets Don Reservations",
+          "growth": "Stratégies de croissance d'entreprise et études de cas",
+          "marketing": "Marketing efficace de vos services",
+          "sixFigure": "Construire une entreprise de covoiturage à six chiffres"
+        }
+      }
+    },
+    "cta": "Rejoignez Gratuitement pour un Accès Anticipé",
+    "ctaSubtext": "Rejoignez RSG gratuitement pour obtenir votre Carte de Visite Digitale, ID Chauffeur, et accès anticipé aux Forums, Blogs, Réductions Voyage et Marchandise"
+  },
+  "faq": {
+    "eyebrow": "Des Questions?",
+    "heading": "Questions Fréquemment Posées",
+    "description": "Tout ce que vous devez savoir sur RSG, les cartes de visite digitales et le système The Don Reservations.",
+    "searchPlaceholder": "Rechercher dans les FAQ... (ex. 'Combien puis-je gagner?')",
+    "foundResults": "{count} résultat(s) trouvé(s) pour \"{query}\"",
+    "noResults": "Aucun résultat trouvé pour \"{query}\". Essayez un autre terme de recherche.",
+    "stillQuestions": {
+      "title": "Encore des Questions?",
+      "description": "Notre équipe de support est là pour vous aider 7 jours sur 7.",
+      "emailSupport": "Support par Email",
+      "liveChat": "Chat en Direct"
+    },
+    "categories": {
+      "moneyEarnings": "Argent et Gains",
+      "digitalCard": "Carte de Visite Digitale RSG",
+      "driverId": "ID Chauffeur Personnel #",
+      "donReservations": "Le Système The Don Reservations",
+      "community": "Communauté et Réseautage",
+      "directory": "Répertoire des Chauffeurs RSG",
+      "pricingSavings": "Prix et Économies",
+      "safetyTrust": "Sécurité et Confiance",
+      "usingPlatform": "Utiliser la Plateforme",
+      "benefits": "Avantages pour les Passagers"
+    }
+  },
+  "finalCTA": {
+    "heading": "Votre Entreprise de Transport Professionnelle Commence Aujourd'hui",
+    "description": "Rejoignez des milliers de chauffeurs et passagers qui prennent le contrôle de leur avenir en transport.",
+    "forDrivers": {
+      "title": "Pour les Chauffeurs",
+      "benefits": {
+        "digitalCard": "Carte de Visite Digitale RSG (sans frais pour les membres)",
+        "driverId": "Votre ID Chauffeur Personnel #",
+        "donAccess": "Accès à l'application The Don Reservations",
+        "directory": "Inscrit au Répertoire RSG",
+        "community": "Communauté et Réseautage",
+        "keepEarnings": "Gardez 100% de Vos Gains"
+      },
+      "cta": "Rejoignez RSG Gratuitement"
+    },
+    "forRiders": {
+      "title": "Pour les Passagers",
+      "benefits": {
+        "findDrivers": "Trouvez des Chauffeurs Professionnels Vérifiés",
+        "bookInstantly": "Réservez Instantanément sur BookTheDon.com",
+        "saveDrivers": "Sauvegardez Vos Chauffeurs Préférés",
+        "directBooking": "Réservation Directe - Pas de Prix de Surge",
+        "betterRates": "Meilleurs Tarifs pour Vous et les Chauffeurs",
+        "buildTrust": "Construisez des Relations de Confiance"
+      },
+      "bookRide": "Réservez un Trajet sur BookTheDon.com",
+      "findDriver": "Trouvez Votre Chauffeur"
+    },
+    "support": {
+      "title": "Des Questions? Nous Sommes Là pour Aider",
+      "emailUs": "Écrivez-nous",
+      "liveChat": "Chat en Direct",
+      "textSupport": "Support par SMS",
+      "available247": "Disponible 24/7"
+    }
+  },
+  "footer": {
+    "description": "La plateforme professionnelle connectant les fournisseurs de transport indépendants avec les passagers recherchant un service de qualité.",
+    "sections": {
+      "forDrivers": {
+        "title": "Pour les Chauffeurs",
+        "links": {
+          "joinFree": "Rejoindre Gratuitement",
+          "digitalCard": "Carte de Visite Digitale",
+          "donReservations": "The Don Reservations",
+          "directory": "Répertoire des Chauffeurs",
+          "community": "Communauté"
+        }
+      },
+      "forRiders": {
+        "title": "Pour les Passagers",
+        "links": {
+          "findDriver": "Trouver un Chauffeur",
+          "bookRide": "Réserver un Trajet",
+          "howItWorks": "Comment Ça Marche",
+          "safety": "Sécurité et Confiance"
+        }
+      },
+      "company": {
+        "title": "Entreprise",
+        "links": {
+          "about": "À Propos de RSG",
+          "blog": "Blog",
+          "careers": "Carrières",
+          "press": "Presse"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "helpCenter": "Centre d'Aide",
+          "contact": "Contactez-nous",
+          "privacy": "Politique de Confidentialité",
+          "terms": "Conditions d'Utilisation"
+        }
+      }
+    },
+    "copyright": "© {year} RideShare Guides. Tous droits réservés.",
+    "tagline": "Construit par des chauffeurs, pour des chauffeurs."
+  }
+}

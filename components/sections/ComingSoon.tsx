@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
@@ -5,31 +8,32 @@ import { Button } from '../ui/Button'
 import { ScrollReveal } from '../animations/ScrollReveal'
 import { FadeIn } from '../animations/FadeIn'
 import { MessageSquare, ShoppingBag, Plane, BookOpen, Check } from 'lucide-react'
-import { sections } from '@/lib/content'
 
 export function ComingSoon() {
-  const iconMap = {
-    MessageSquare,
-    ShoppingBag,
-    Plane,
-    BookOpen,
-  }
+  const t = useTranslations('comingSoon')
+
+  const features = [
+    { key: 'forums', Icon: MessageSquare, items: ['marketSpecific', 'vehicleAdvice', 'taxStrategy', 'customerService'] },
+    { key: 'classifieds', Icon: ShoppingBag, items: ['vehicles', 'lease', 'equipment', 'partnerships'] },
+    { key: 'flightInfo', Icon: Plane, items: ['liveFlights', 'pickupStrategies', 'queueTimes', 'volumeTrends'] },
+    { key: 'blogs', Icon: BookOpen, items: ['tutorials', 'growth', 'marketing', 'sixFigure'] },
+  ]
 
   return (
     <section className="bg-gradient-to-br from-neutral-50 to-primary-50 py-10 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeader
-            eyebrow="What's Next"
-            heading="Future Features Coming to RSG!"
-            description="The only Social Media Platform exclusively for independent contractors."
+            eyebrow={t('eyebrow')}
+            heading={t('heading')}
+            description={t('description')}
             className="mb-12"
           />
         </FadeIn>
 
         <ScrollReveal className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {sections.comingSoon.map((feature, index) => {
-            const Icon = iconMap[feature.icon as keyof typeof iconMap]
+          {features.map((feature, index) => {
+            const Icon = feature.Icon
 
             return (
               <Card key={index} hover className="h-full">
@@ -37,13 +41,13 @@ export function ComingSoon() {
                   <Icon className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-neutral-900">
-                  {feature.title}
+                  {t(`features.${feature.key}.title`)}
                 </h3>
                 <ul className="space-y-2">
-                  {feature.features.map((item, idx) => (
+                  {feature.items.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm text-neutral-600">
                       <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-500" />
-                      <span>{item}</span>
+                      <span>{t(`features.${feature.key}.items.${item}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -55,10 +59,10 @@ export function ComingSoon() {
         <FadeIn delay={0.4}>
           <div className="text-center">
             <Button variant="primary" size="lg">
-              Join Free to Get Early Access
+              {t('cta')}
             </Button>
             <p className="mt-4 text-sm text-neutral-600">
-              Join RSG free to get your Digital Business Card, Driver ID, and early access to Forums, Blogs, Travel Discounts & Merchandise
+              {t('ctaSubtext')}
             </p>
           </div>
         </FadeIn>

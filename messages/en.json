@@ -1,0 +1,417 @@
+{
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "joinFree": "Join Free",
+    "bookNow": "Book Now",
+    "forDrivers": "For Drivers",
+    "forRiders": "For Riders",
+    "general": "General",
+    "comingSoon": "Coming Soon",
+    "free": "FREE",
+    "driver": "Driver",
+    "rider": "Rider"
+  },
+  "languageBanner": {
+    "detected": "We detected you might prefer {language}.",
+    "switchQuestion": "Would you like to switch?",
+    "switchButton": "Switch to {language}",
+    "dismiss": "Stay in English"
+  },
+  "header": {
+    "brand": "RideShare Guides",
+    "menu": {
+      "howItWorks": "How It Works",
+      "features": "Features",
+      "faq": "FAQ",
+      "joinFree": "Join Free"
+    }
+  },
+  "hero": {
+    "badge": "The #1 Platform for Independent Drivers",
+    "headline": "Your Professional Transportation Business Starts Today",
+    "subheadline": "Join thousands of professional drivers and riders who are building direct connections on the only social media platform exclusively designed for the gig economy.",
+    "primaryCTA": "Join RSG Free + Get Digital Card",
+    "secondaryCTA": "Book a Ride Now",
+    "benefits": {
+      "alwaysFree": "Always Free Membership",
+      "worldwide": "For Drivers & Riders Worldwide",
+      "buildBusiness": "Build Your Transportation Business",
+      "connectGlobally": "Connect Locally, Grow Globally"
+    },
+    "riderCTA": {
+      "title": "Need a Ride?",
+      "subtitle": "Book your ride instantly with verified professional drivers",
+      "button": "Book at BookTheDon.com"
+    }
+  },
+  "digitalBusinessCard": {
+    "eyebrow": "Your Professional Identity",
+    "heading": "RSG Digital Business Card",
+    "forDrivers": {
+      "title": "For Drivers: Your Professional Identity",
+      "benefits": {
+        "headshot": "Professional headshot and vehicle photo",
+        "driverId": "Your exclusive Personal Driver ID #",
+        "qrCode": "QR code for instant bookings",
+        "directLink": "Direct link to The Don Reservations system",
+        "shareable": "Shareable across all social platforms",
+        "directory": "Listed in the RSG Global Drivers Directory"
+      },
+      "value": "Professional digital business cards cost $99-299/year elsewhere. Yours is included FREE with RSG membership.",
+      "howItWorks": "Share your card after every ride, post it on social media, or let riders find you in our directory. Every scan is a potential repeat customer—building YOUR business, not a platform's."
+    },
+    "forRiders": {
+      "title": "For Riders: Find Your Perfect Driver",
+      "description": "Find and book your favorite professional drivers directly. Browse the RSG Drivers Directory to discover vetted, commercially-insured drivers in your area, view their professional profiles, and save their contact information for future bookings. Book your ride instantly at BookTheDon.com.",
+      "bookingCTA": "Book Your Ride at BookTheDon.com"
+    }
+  },
+  "communityInfluencers": {
+    "eyebrow": "Join the Community",
+    "heading": "RSG Community of Influencers",
+    "subtitle": "You're not just joining a platform—you're joining a community of successful drivers who share real strategies that work.",
+    "description": "Learn from the Best in the Business",
+    "leaders": {
+      "youtube": {
+        "title": "YouTube Creators",
+        "description": "Sharing weekly income strategies, tax tips, and market insights"
+      },
+      "facebook": {
+        "title": "Facebook Group Moderators",
+        "description": "Hosting live Q&As and success story features"
+      },
+      "topEarners": {
+        "title": "Top Earners",
+        "description": "Revealing the exact methods they use to maximize income"
+      },
+      "marketSpecialists": {
+        "title": "Market Specialists",
+        "description": "Breaking down airport strategies, surge tactics, and premium service techniques"
+      }
+    },
+    "benefits": {
+      "exclusive": "Exclusive content from proven earners",
+      "weekly": "Weekly strategy sessions and AMAs",
+      "behindScenes": "Behind-the-scenes looks at six-figure driver businesses",
+      "directAccess": "Direct access to mentors who've built what you're building"
+    },
+    "forRiders": "Follow your favorite drivers, see their tips and insights, and stay connected with the professionals who get you where you need to go. Book your ride today at BookTheDon.com."
+  },
+  "donReservations": {
+    "eyebrow": "100% OF EVERY FARE",
+    "heading": "The Don Reservations app",
+    "subheading": "aka The Driver-Owned Network",
+    "description": "The Don Reservations app (available on Google and Apple stores) is the industry's first app that connects drivers to riders directly while using today's familiar rideshare technology. Get your exclusive Personal Driver ID # that connects your riders directly to your Driver ID #, and build your clientele today.",
+    "whyYouNeedIt": {
+      "buildBusiness": {
+        "title": "Build Your Own Business",
+        "description": "Stop building wealth for platforms. Every client you convert becomes YOUR customer, not Uber's or Lyft's."
+      },
+      "secureId": {
+        "title": "Secure Your Personal Driver ID #",
+        "description": "Your unique identifier in the RSG ecosystem—your professional credential that proves you're verified, commercially insured, and cannot be replicated."
+      },
+      "familiarTech": {
+        "title": "Familiar Technology, Better Economics",
+        "description": "Riders use the same simple booking process they know. You use professional-grade dispatch tools. The difference? You are the business owner."
+      }
+    },
+    "howToGetStarted": "How to Get Started",
+    "steps": {
+      "step1": "Join RideShareGuides.com (Free Membership)",
+      "step2": "Must have a Commercial Insurance for your Drivers, to use platform.",
+      "step3": "Receive your exclusive Personal Driver ID #",
+      "step4": "Activate your RSG Digital Business Card",
+      "step5": "Start accepting direct bookings"
+    },
+    "disclaimer": "Disclaimer: The Don Reservations is a SaaS company and not a rideshare company. All drivers operate as independent contractors of their own business. NYC TLC drivers are required to have active TLC permits as well as TLC commercial plates and insurance to use the platform.",
+    "getDriverId": "Get Your Driver ID #",
+    "bookRideNow": "Book a Ride Now",
+    "ridersNote": "Riders: Book your ride instantly at"
+  },
+  "driversDirectory": {
+    "eyebrow": "Get Discovered",
+    "heading": "Free RSG Drivers Directory",
+    "description": "Your profile in a searchable directory connecting professional drivers with riders seeking quality service.",
+    "forDrivers": {
+      "title": "For Drivers: Get Discovered",
+      "benefits": {
+        "freeProfile": "Free professional profile in searchable directory",
+        "showcase": "Showcase your services, vehicles, and specialties",
+        "ratings": "Display verified ratings and customer reviews",
+        "driverId": "Include your Personal Driver ID # for direct bookings",
+        "availability": "Update your availability and coverage areas in real-time",
+        "connect": "Connect with riders actively seeking professional drivers"
+      },
+      "cta": "Create Your Free RSG Directory Listing"
+    },
+    "forRiders": {
+      "title": "For Riders: Find Your Perfect Driver",
+      "description": "Search our directory of verified, commercially-insured professional drivers. Filter by location, services, vehicle type, and ratings to find the perfect match for your transportation needs.",
+      "features": {
+        "searchLocation": {
+          "title": "Search by Location",
+          "description": "Find professional drivers in your area"
+        },
+        "verifiedRatings": {
+          "title": "Verified Ratings",
+          "description": "See reviews from real customers"
+        },
+        "directContact": {
+          "title": "Direct Contact",
+          "description": "Book directly with your preferred driver"
+        }
+      },
+      "bookRide": "Book a Ride at BookTheDon.com",
+      "browseDirectory": "Browse Driver Directory"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Simple & Powerful",
+    "heading": "How It Works",
+    "description": "Whether you're a driver building your business or a rider looking for trusted transportation, RSG makes it simple.",
+    "forDrivers": {
+      "dashboardTitle": "Your Driver Dashboard",
+      "features": {
+        "digitalCard": {
+          "title": "RSG Digital Business Card",
+          "description": "Professional card with QR code, vehicle info, and your Personal Driver ID #"
+        },
+        "donReservations": {
+          "title": "The Don Reservations app",
+          "description": "Accept and manage direct bookings, keep 100% of every fare"
+        },
+        "earnings": {
+          "title": "Earnings Dashboard",
+          "description": "Track direct bookings, repeat customers, and total earnings"
+        },
+        "socialMedia": {
+          "title": "Access to RSG Social Media Platform",
+          "description": "Connect with top earners, share tips, learn strategies"
+        }
+      },
+      "requirements": {
+        "title": "Requirements",
+        "commercial": "Commercial insurance (NYC Drivers - TLC Permit and TLC plate required)",
+        "registration": "Current vehicle registration",
+        "background": "Background check clearance",
+        "licensing": "City licensing (where applicable)"
+      },
+      "cta": "Get Started as a Driver"
+    },
+    "forRiders": {
+      "features": {
+        "findDrivers": {
+          "title": "Find Drivers",
+          "description": "Browse the RSG Directory to find professional drivers in your area"
+        },
+        "verifyReview": {
+          "title": "Verify & Review",
+          "description": "Check driver credentials, insurance, and reviews from other riders"
+        },
+        "saveBook": {
+          "title": "Save & Book",
+          "description": "Scan QR codes or save driver contacts for easy rebooking"
+        },
+        "bookDirectly": {
+          "title": "Book Directly",
+          "description": "Use The Don Reservations system for hassle-free booking"
+        },
+        "betterPricing": {
+          "title": "Better Pricing",
+          "description": "No surge pricing, no platform fees - just fair rates"
+        },
+        "buildTrust": {
+          "title": "Build Trust",
+          "description": "Develop relationships with your favorite professional drivers"
+        }
+      },
+      "whyLove": {
+        "title": "Why Riders Love RSG",
+        "betterRates": "Better rates than Uber/Lyft (no platform fees)",
+        "favoriteDrivers": "Book your favorite drivers anytime",
+        "noSurge": "No surge pricing surprises",
+        "supportDrivers": "Support drivers directly (they keep 100%)"
+      },
+      "cta": "Find Your Driver"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Success Stories",
+    "heading": "What Our Members Say",
+    "quotes": {
+      "jennifer": {
+        "quote": "The RSG Digital Business Card changed my business. I went from 100% platform rides to 40% direct bookings in 6 months. I'm earning $800+ more per month just from repeat clients.",
+        "author": "Jennifer M.",
+        "location": "Houston, TX"
+      },
+      "david": {
+        "quote": "Finding professional drivers used to mean hoping I'd get the same person twice. Now I have 3 drivers saved in RSG, and I book whoever's available. Better service, better prices.",
+        "author": "David K.",
+        "location": "Miami, FL"
+      },
+      "marcus": {
+        "quote": "I thought I needed expensive software to run a real transportation business. RSG gave me everything I need—booking system, business card, directory listing—for free. My Personal Driver ID # alone is worth the membership.",
+        "author": "Marcus T.",
+        "location": "Atlanta, GA"
+      },
+      "sarah": {
+        "quote": "As a rider, I love supporting drivers directly. The RSG Directory makes it easy to find verified, professional drivers, and booking through The Don Reservations is just as simple as using Uber.",
+        "author": "Sarah L.",
+        "location": "Seattle, WA"
+      }
+    }
+  },
+  "comingSoon": {
+    "eyebrow": "What's Next",
+    "heading": "Future Features Coming to RSG!",
+    "description": "The only Social Media Platform exclusively for independent contractors.",
+    "features": {
+      "forums": {
+        "title": "Forums",
+        "items": {
+          "marketSpecific": "Market-specific forums (ex. NYC, Miami...)",
+          "vehicleAdvice": "Vehicle advice and maintenance",
+          "taxStrategy": "Tax and business strategy",
+          "customerService": "Customer service excellence"
+        }
+      },
+      "classifieds": {
+        "title": "Classifieds",
+        "items": {
+          "vehicles": "Vehicles for sale & Rentals listed",
+          "lease": "Lease takeovers and financing options",
+          "equipment": "Equipment and accessories",
+          "partnerships": "Partnership opportunities"
+        }
+      },
+      "flightInfo": {
+        "title": "Flight Information",
+        "items": {
+          "liveFlights": "Live flight arrivals and delays",
+          "pickupStrategies": "Best pickup/dropoff strategies",
+          "queueTimes": "Airport queue times and tips",
+          "volumeTrends": "Airline passenger volume trends"
+        }
+      },
+      "blogs": {
+        "title": "RSG Blogs",
+        "items": {
+          "tutorials": "Complete Don Reservations tutorials",
+          "growth": "Business growth strategies and case studies",
+          "marketing": "Marketing your services effectively",
+          "sixFigure": "Building a six-figure rideshare business"
+        }
+      }
+    },
+    "cta": "Join Free to Get Early Access",
+    "ctaSubtext": "Join RSG free to get your Digital Business Card, Driver ID, and early access to Forums, Blogs, Travel Discounts & Merchandise"
+  },
+  "faq": {
+    "eyebrow": "Got Questions?",
+    "heading": "Frequently Asked Questions",
+    "description": "Everything you need to know about RSG, digital business cards, and The Don Reservations system.",
+    "searchPlaceholder": "Search FAQs... (e.g., 'How much can I make?')",
+    "foundResults": "Found {count} result(s) for \"{query}\"",
+    "noResults": "No results found for \"{query}\". Try a different search term.",
+    "stillQuestions": {
+      "title": "Still Have Questions?",
+      "description": "Our support team is here to help 7 days a week.",
+      "emailSupport": "Email Support",
+      "liveChat": "Live Chat"
+    },
+    "categories": {
+      "moneyEarnings": "Money & Earnings",
+      "digitalCard": "RSG Digital Business Card",
+      "driverId": "Personal Driver ID #",
+      "donReservations": "The Don Reservations System",
+      "community": "Community & Networking",
+      "directory": "RSG Drivers Directory",
+      "pricingSavings": "Pricing & Savings",
+      "safetyTrust": "Safety & Trust",
+      "usingPlatform": "Using the Platform",
+      "benefits": "Benefits for Riders"
+    }
+  },
+  "finalCTA": {
+    "heading": "Your Professional Transportation Business Starts Today",
+    "description": "Join thousands of drivers and riders who are taking control of their transportation future.",
+    "forDrivers": {
+      "title": "For Drivers",
+      "benefits": {
+        "digitalCard": "RSG Digital Business Card (no cost for members)",
+        "driverId": "Your Personal Driver ID #",
+        "donAccess": "Access to The Don Reservations app",
+        "directory": "Listed in RSG Directory",
+        "community": "Community & Networking",
+        "keepEarnings": "Keep 100% of Your Earnings"
+      },
+      "cta": "Join RSG Free"
+    },
+    "forRiders": {
+      "title": "For Riders",
+      "benefits": {
+        "findDrivers": "Find Verified Professional Drivers",
+        "bookInstantly": "Book Instantly at BookTheDon.com",
+        "saveDrivers": "Save Your Favorite Drivers",
+        "directBooking": "Direct Booking - No Surge Pricing",
+        "betterRates": "Better Rates for You & Drivers",
+        "buildTrust": "Build Trusted Relationships"
+      },
+      "bookRide": "Book a Ride at BookTheDon.com",
+      "findDriver": "Find Your Driver"
+    },
+    "support": {
+      "title": "Questions? We're Here to Help",
+      "emailUs": "Email Us",
+      "liveChat": "Live Chat",
+      "textSupport": "Text Support",
+      "available247": "Available 24/7"
+    }
+  },
+  "footer": {
+    "description": "The professional platform connecting independent transportation providers with riders seeking quality service.",
+    "sections": {
+      "forDrivers": {
+        "title": "For Drivers",
+        "links": {
+          "joinFree": "Join Free",
+          "digitalCard": "Digital Business Card",
+          "donReservations": "The Don Reservations",
+          "directory": "Drivers Directory",
+          "community": "Community"
+        }
+      },
+      "forRiders": {
+        "title": "For Riders",
+        "links": {
+          "findDriver": "Find a Driver",
+          "bookRide": "Book a Ride",
+          "howItWorks": "How It Works",
+          "safety": "Safety & Trust"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About RSG",
+          "blog": "Blog",
+          "careers": "Careers",
+          "press": "Press"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "helpCenter": "Help Center",
+          "contact": "Contact Us",
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Service"
+        }
+      }
+    },
+    "copyright": "© {year} RideShare Guides. All rights reserved.",
+    "tagline": "Built by drivers, for drivers."
+  }
+}

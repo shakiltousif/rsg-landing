@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Lexend } from "next/font/google";
+import { Space_Grotesk, Lexend } from "next/font/google";
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
+import { LanguagePromptBanner } from '@/components/ui/LanguagePromptBanner';
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const lexend = Lexend({
@@ -117,13 +121,16 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className={`${inter.variable} ${lexend.variable}`}>
+    <html lang={locale} className={`${spaceGrotesk.variable} ${lexend.variable}`}>
       <head>
         {/* Manifest for PWA */}
         <link rel="manifest" href="/manifest.json" />
@@ -291,7 +298,10 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <LanguagePromptBanner />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

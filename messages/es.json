@@ -1,0 +1,417 @@
+{
+  "common": {
+    "learnMore": "Más Información",
+    "getStarted": "Comenzar",
+    "joinFree": "Únete Gratis",
+    "bookNow": "Reservar Ahora",
+    "forDrivers": "Para Conductores",
+    "forRiders": "Para Pasajeros",
+    "general": "General",
+    "comingSoon": "Próximamente",
+    "free": "GRATIS",
+    "driver": "Conductor",
+    "rider": "Pasajero"
+  },
+  "languageBanner": {
+    "detected": "Detectamos que podrías preferir {language}.",
+    "switchQuestion": "¿Te gustaría cambiar?",
+    "switchButton": "Cambiar a {language}",
+    "dismiss": "Mantener en Español"
+  },
+  "header": {
+    "brand": "RideShare Guides",
+    "menu": {
+      "howItWorks": "Cómo Funciona",
+      "features": "Características",
+      "faq": "Preguntas Frecuentes",
+      "joinFree": "Únete Gratis"
+    }
+  },
+  "hero": {
+    "badge": "La Plataforma #1 para Conductores Independientes",
+    "headline": "Tu Negocio de Transporte Profesional Comienza Hoy",
+    "subheadline": "Únete a miles de conductores y pasajeros profesionales que están construyendo conexiones directas en la única plataforma de redes sociales diseñada exclusivamente para la economía gig.",
+    "primaryCTA": "Únete a RSG Gratis + Obtén Tu Tarjeta Digital",
+    "secondaryCTA": "Reservar un Viaje Ahora",
+    "benefits": {
+      "alwaysFree": "Membresía Siempre Gratuita",
+      "worldwide": "Para Conductores y Pasajeros en Todo el Mundo",
+      "buildBusiness": "Construye Tu Negocio de Transporte",
+      "connectGlobally": "Conecta Localmente, Crece Globalmente"
+    },
+    "riderCTA": {
+      "title": "¿Necesitas un Viaje?",
+      "subtitle": "Reserva tu viaje al instante con conductores profesionales verificados",
+      "button": "Reserva en BookTheDon.com"
+    }
+  },
+  "digitalBusinessCard": {
+    "eyebrow": "Tu Identidad Profesional",
+    "heading": "Tarjeta de Presentación Digital RSG",
+    "forDrivers": {
+      "title": "Para Conductores: Tu Identidad Profesional",
+      "benefits": {
+        "headshot": "Foto profesional y foto del vehículo",
+        "driverId": "Tu exclusivo ID de Conductor Personal #",
+        "qrCode": "Código QR para reservas instantáneas",
+        "directLink": "Enlace directo al sistema The Don Reservations",
+        "shareable": "Compartible en todas las plataformas sociales",
+        "directory": "Listado en el Directorio Global de Conductores RSG"
+      },
+      "value": "Las tarjetas de presentación digitales profesionales cuestan $99-299/año en otros lugares. La tuya está incluida GRATIS con la membresía RSG.",
+      "howItWorks": "Comparte tu tarjeta después de cada viaje, publícala en redes sociales o deja que los pasajeros te encuentren en nuestro directorio. Cada escaneo es un cliente potencial recurrente—construyendo TU negocio, no el de una plataforma."
+    },
+    "forRiders": {
+      "title": "Para Pasajeros: Encuentra Tu Conductor Perfecto",
+      "description": "Encuentra y reserva tus conductores profesionales favoritos directamente. Explora el Directorio de Conductores RSG para descubrir conductores verificados y con seguro comercial en tu área, ver sus perfiles profesionales y guardar su información de contacto para futuras reservas. Reserva tu viaje al instante en BookTheDon.com.",
+      "bookingCTA": "Reserva Tu Viaje en BookTheDon.com"
+    }
+  },
+  "communityInfluencers": {
+    "eyebrow": "Únete a la Comunidad",
+    "heading": "Comunidad de Influencers RSG",
+    "subtitle": "No solo te unes a una plataforma—te unes a una comunidad de conductores exitosos que comparten estrategias reales que funcionan.",
+    "description": "Aprende de los Mejores en el Negocio",
+    "leaders": {
+      "youtube": {
+        "title": "Creadores de YouTube",
+        "description": "Compartiendo estrategias de ingresos semanales, consejos fiscales e información del mercado"
+      },
+      "facebook": {
+        "title": "Moderadores de Grupos de Facebook",
+        "description": "Organizando sesiones de preguntas y respuestas en vivo y destacando historias de éxito"
+      },
+      "topEarners": {
+        "title": "Mejores Ganadores",
+        "description": "Revelando los métodos exactos que usan para maximizar ingresos"
+      },
+      "marketSpecialists": {
+        "title": "Especialistas de Mercado",
+        "description": "Desglosando estrategias de aeropuerto, tácticas de surge y técnicas de servicio premium"
+      }
+    },
+    "benefits": {
+      "exclusive": "Contenido exclusivo de ganadores comprobados",
+      "weekly": "Sesiones de estrategia semanales y AMAs",
+      "behindScenes": "Miradas detrás de escenas a negocios de conductores de seis cifras",
+      "directAccess": "Acceso directo a mentores que han construido lo que tú estás construyendo"
+    },
+    "forRiders": "Sigue a tus conductores favoritos, ve sus consejos e información, y mantente conectado con los profesionales que te llevan a donde necesitas ir. Reserva tu viaje hoy en BookTheDon.com."
+  },
+  "donReservations": {
+    "eyebrow": "100% DE CADA TARIFA",
+    "heading": "La app The Don Reservations",
+    "subheading": "también conocida como Driver-Owned Network",
+    "description": "La app The Don Reservations (disponible en Google y Apple stores) es la primera app de la industria que conecta conductores con pasajeros directamente usando la tecnología familiar de rideshare de hoy. Obtén tu exclusivo ID de Conductor Personal # que conecta a tus pasajeros directamente con tu ID de Conductor #, y construye tu clientela hoy.",
+    "whyYouNeedIt": {
+      "buildBusiness": {
+        "title": "Construye Tu Propio Negocio",
+        "description": "Deja de construir riqueza para las plataformas. Cada cliente que conviertes se convierte en TU cliente, no de Uber o Lyft."
+      },
+      "secureId": {
+        "title": "Asegura Tu ID de Conductor Personal #",
+        "description": "Tu identificador único en el ecosistema RSG—tu credencial profesional que demuestra que estás verificado, con seguro comercial, y no puede ser replicado."
+      },
+      "familiarTech": {
+        "title": "Tecnología Familiar, Mejor Economía",
+        "description": "Los pasajeros usan el mismo proceso de reserva simple que conocen. Tú usas herramientas de despacho de grado profesional. ¿La diferencia? Tú eres el dueño del negocio."
+      }
+    },
+    "howToGetStarted": "Cómo Empezar",
+    "steps": {
+      "step1": "Únete a RideShareGuides.com (Membresía Gratuita)",
+      "step2": "Debes tener Seguro Comercial para tus Conductores, para usar la plataforma.",
+      "step3": "Recibe tu exclusivo ID de Conductor Personal #",
+      "step4": "Activa tu Tarjeta de Presentación Digital RSG",
+      "step5": "Comienza a aceptar reservas directas"
+    },
+    "disclaimer": "Aviso: The Don Reservations es una empresa SaaS y no una empresa de rideshare. Todos los conductores operan como contratistas independientes de su propio negocio. Los conductores de NYC TLC deben tener permisos TLC activos así como placas comerciales TLC y seguro para usar la plataforma.",
+    "getDriverId": "Obtén Tu ID de Conductor #",
+    "bookRideNow": "Reservar un Viaje Ahora",
+    "ridersNote": "Pasajeros: Reserva tu viaje al instante en"
+  },
+  "driversDirectory": {
+    "eyebrow": "Ser Descubierto",
+    "heading": "Directorio Gratuito de Conductores RSG",
+    "description": "Tu perfil en un directorio buscable que conecta conductores profesionales con pasajeros que buscan servicio de calidad.",
+    "forDrivers": {
+      "title": "Para Conductores: Ser Descubierto",
+      "benefits": {
+        "freeProfile": "Perfil profesional gratuito en directorio buscable",
+        "showcase": "Muestra tus servicios, vehículos y especialidades",
+        "ratings": "Muestra calificaciones verificadas y reseñas de clientes",
+        "driverId": "Incluye tu ID de Conductor Personal # para reservas directas",
+        "availability": "Actualiza tu disponibilidad y áreas de cobertura en tiempo real",
+        "connect": "Conecta con pasajeros que buscan activamente conductores profesionales"
+      },
+      "cta": "Crea Tu Listado Gratuito en el Directorio RSG"
+    },
+    "forRiders": {
+      "title": "Para Pasajeros: Encuentra Tu Conductor Perfecto",
+      "description": "Busca en nuestro directorio de conductores profesionales verificados y con seguro comercial. Filtra por ubicación, servicios, tipo de vehículo y calificaciones para encontrar la combinación perfecta para tus necesidades de transporte.",
+      "features": {
+        "searchLocation": {
+          "title": "Buscar por Ubicación",
+          "description": "Encuentra conductores profesionales en tu área"
+        },
+        "verifiedRatings": {
+          "title": "Calificaciones Verificadas",
+          "description": "Ve reseñas de clientes reales"
+        },
+        "directContact": {
+          "title": "Contacto Directo",
+          "description": "Reserva directamente con tu conductor preferido"
+        }
+      },
+      "bookRide": "Reserva un Viaje en BookTheDon.com",
+      "browseDirectory": "Explorar Directorio de Conductores"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Simple y Poderoso",
+    "heading": "Cómo Funciona",
+    "description": "Ya seas un conductor construyendo tu negocio o un pasajero buscando transporte confiable, RSG lo hace simple.",
+    "forDrivers": {
+      "dashboardTitle": "Tu Panel de Conductor",
+      "features": {
+        "digitalCard": {
+          "title": "Tarjeta de Presentación Digital RSG",
+          "description": "Tarjeta profesional con código QR, info del vehículo y tu ID de Conductor Personal #"
+        },
+        "donReservations": {
+          "title": "La app The Don Reservations",
+          "description": "Acepta y gestiona reservas directas, quédate con el 100% de cada tarifa"
+        },
+        "earnings": {
+          "title": "Panel de Ganancias",
+          "description": "Rastrea reservas directas, clientes recurrentes y ganancias totales"
+        },
+        "socialMedia": {
+          "title": "Acceso a la Plataforma de Redes Sociales RSG",
+          "description": "Conecta con los mejores ganadores, comparte consejos, aprende estrategias"
+        }
+      },
+      "requirements": {
+        "title": "Requisitos",
+        "commercial": "Seguro comercial (Conductores NYC - Se requiere Permiso TLC y placa TLC)",
+        "registration": "Registro de vehículo actual",
+        "background": "Verificación de antecedentes aprobada",
+        "licensing": "Licencia de la ciudad (donde aplique)"
+      },
+      "cta": "Comenzar como Conductor"
+    },
+    "forRiders": {
+      "features": {
+        "findDrivers": {
+          "title": "Encontrar Conductores",
+          "description": "Explora el Directorio RSG para encontrar conductores profesionales en tu área"
+        },
+        "verifyReview": {
+          "title": "Verificar y Revisar",
+          "description": "Verifica credenciales del conductor, seguro y reseñas de otros pasajeros"
+        },
+        "saveBook": {
+          "title": "Guardar y Reservar",
+          "description": "Escanea códigos QR o guarda contactos de conductores para reservar fácilmente"
+        },
+        "bookDirectly": {
+          "title": "Reservar Directamente",
+          "description": "Usa el sistema The Don Reservations para reservas sin complicaciones"
+        },
+        "betterPricing": {
+          "title": "Mejores Precios",
+          "description": "Sin precios de surge, sin tarifas de plataforma - solo precios justos"
+        },
+        "buildTrust": {
+          "title": "Construir Confianza",
+          "description": "Desarrolla relaciones con tus conductores profesionales favoritos"
+        }
+      },
+      "whyLove": {
+        "title": "Por Qué los Pasajeros Aman RSG",
+        "betterRates": "Mejores tarifas que Uber/Lyft (sin tarifas de plataforma)",
+        "favoriteDrivers": "Reserva tus conductores favoritos en cualquier momento",
+        "noSurge": "Sin sorpresas de precios de surge",
+        "supportDrivers": "Apoya a los conductores directamente (ellos se quedan con el 100%)"
+      },
+      "cta": "Encuentra Tu Conductor"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Historias de Éxito",
+    "heading": "Lo Que Dicen Nuestros Miembros",
+    "quotes": {
+      "jennifer": {
+        "quote": "La Tarjeta de Presentación Digital RSG cambió mi negocio. Pasé del 100% de viajes por plataforma al 40% de reservas directas en 6 meses. Estoy ganando $800+ más al mes solo de clientes recurrentes.",
+        "author": "Jennifer M.",
+        "location": "Houston, TX"
+      },
+      "david": {
+        "quote": "Encontrar conductores profesionales solía significar esperar obtener a la misma persona dos veces. Ahora tengo 3 conductores guardados en RSG, y reservo al que esté disponible. Mejor servicio, mejores precios.",
+        "author": "David K.",
+        "location": "Miami, FL"
+      },
+      "marcus": {
+        "quote": "Pensé que necesitaba software costoso para administrar un negocio de transporte real. RSG me dio todo lo que necesito—sistema de reservas, tarjeta de presentación, listado en directorio—gratis. Mi ID de Conductor Personal # solo vale la membresía.",
+        "author": "Marcus T.",
+        "location": "Atlanta, GA"
+      },
+      "sarah": {
+        "quote": "Como pasajera, me encanta apoyar a los conductores directamente. El Directorio RSG facilita encontrar conductores verificados y profesionales, y reservar a través de The Don Reservations es tan simple como usar Uber.",
+        "author": "Sarah L.",
+        "location": "Seattle, WA"
+      }
+    }
+  },
+  "comingSoon": {
+    "eyebrow": "Qué Sigue",
+    "heading": "¡Características Futuras Llegando a RSG!",
+    "description": "La única Plataforma de Redes Sociales exclusivamente para contratistas independientes.",
+    "features": {
+      "forums": {
+        "title": "Foros",
+        "items": {
+          "marketSpecific": "Foros específicos por mercado (ej. NYC, Miami...)",
+          "vehicleAdvice": "Consejos de vehículos y mantenimiento",
+          "taxStrategy": "Estrategia fiscal y de negocios",
+          "customerService": "Excelencia en servicio al cliente"
+        }
+      },
+      "classifieds": {
+        "title": "Clasificados",
+        "items": {
+          "vehicles": "Vehículos en venta y alquileres listados",
+          "lease": "Traspasos de leasing y opciones de financiamiento",
+          "equipment": "Equipos y accesorios",
+          "partnerships": "Oportunidades de asociación"
+        }
+      },
+      "flightInfo": {
+        "title": "Información de Vuelos",
+        "items": {
+          "liveFlights": "Llegadas de vuelos en vivo y retrasos",
+          "pickupStrategies": "Mejores estrategias de recogida/entrega",
+          "queueTimes": "Tiempos de cola en aeropuerto y consejos",
+          "volumeTrends": "Tendencias de volumen de pasajeros de aerolíneas"
+        }
+      },
+      "blogs": {
+        "title": "Blogs RSG",
+        "items": {
+          "tutorials": "Tutoriales completos de Don Reservations",
+          "growth": "Estrategias de crecimiento de negocio y casos de estudio",
+          "marketing": "Marketing efectivo de tus servicios",
+          "sixFigure": "Construyendo un negocio de rideshare de seis cifras"
+        }
+      }
+    },
+    "cta": "Únete Gratis para Obtener Acceso Anticipado",
+    "ctaSubtext": "Únete a RSG gratis para obtener tu Tarjeta de Presentación Digital, ID de Conductor, y acceso anticipado a Foros, Blogs, Descuentos de Viaje y Mercancía"
+  },
+  "faq": {
+    "eyebrow": "¿Tienes Preguntas?",
+    "heading": "Preguntas Frecuentes",
+    "description": "Todo lo que necesitas saber sobre RSG, tarjetas de presentación digitales y el sistema The Don Reservations.",
+    "searchPlaceholder": "Buscar preguntas... (ej. '¿Cuánto puedo ganar?')",
+    "foundResults": "Se encontraron {count} resultado(s) para \"{query}\"",
+    "noResults": "No se encontraron resultados para \"{query}\". Intenta con otro término de búsqueda.",
+    "stillQuestions": {
+      "title": "¿Aún Tienes Preguntas?",
+      "description": "Nuestro equipo de soporte está aquí para ayudar 7 días a la semana.",
+      "emailSupport": "Soporte por Email",
+      "liveChat": "Chat en Vivo"
+    },
+    "categories": {
+      "moneyEarnings": "Dinero y Ganancias",
+      "digitalCard": "Tarjeta de Presentación Digital RSG",
+      "driverId": "ID de Conductor Personal #",
+      "donReservations": "El Sistema The Don Reservations",
+      "community": "Comunidad y Networking",
+      "directory": "Directorio de Conductores RSG",
+      "pricingSavings": "Precios y Ahorros",
+      "safetyTrust": "Seguridad y Confianza",
+      "usingPlatform": "Usando la Plataforma",
+      "benefits": "Beneficios para Pasajeros"
+    }
+  },
+  "finalCTA": {
+    "heading": "Tu Negocio de Transporte Profesional Comienza Hoy",
+    "description": "Únete a miles de conductores y pasajeros que están tomando control de su futuro de transporte.",
+    "forDrivers": {
+      "title": "Para Conductores",
+      "benefits": {
+        "digitalCard": "Tarjeta de Presentación Digital RSG (sin costo para miembros)",
+        "driverId": "Tu ID de Conductor Personal #",
+        "donAccess": "Acceso a la app The Don Reservations",
+        "directory": "Listado en el Directorio RSG",
+        "community": "Comunidad y Networking",
+        "keepEarnings": "Quédate con el 100% de Tus Ganancias"
+      },
+      "cta": "Únete a RSG Gratis"
+    },
+    "forRiders": {
+      "title": "Para Pasajeros",
+      "benefits": {
+        "findDrivers": "Encuentra Conductores Profesionales Verificados",
+        "bookInstantly": "Reserva al Instante en BookTheDon.com",
+        "saveDrivers": "Guarda Tus Conductores Favoritos",
+        "directBooking": "Reserva Directa - Sin Precios de Surge",
+        "betterRates": "Mejores Tarifas para Ti y los Conductores",
+        "buildTrust": "Construye Relaciones de Confianza"
+      },
+      "bookRide": "Reserva un Viaje en BookTheDon.com",
+      "findDriver": "Encuentra Tu Conductor"
+    },
+    "support": {
+      "title": "¿Preguntas? Estamos Aquí para Ayudar",
+      "emailUs": "Escríbenos",
+      "liveChat": "Chat en Vivo",
+      "textSupport": "Soporte por Texto",
+      "available247": "Disponible 24/7"
+    }
+  },
+  "footer": {
+    "description": "La plataforma profesional que conecta proveedores de transporte independientes con pasajeros que buscan servicio de calidad.",
+    "sections": {
+      "forDrivers": {
+        "title": "Para Conductores",
+        "links": {
+          "joinFree": "Únete Gratis",
+          "digitalCard": "Tarjeta de Presentación Digital",
+          "donReservations": "The Don Reservations",
+          "directory": "Directorio de Conductores",
+          "community": "Comunidad"
+        }
+      },
+      "forRiders": {
+        "title": "Para Pasajeros",
+        "links": {
+          "findDriver": "Encuentra un Conductor",
+          "bookRide": "Reserva un Viaje",
+          "howItWorks": "Cómo Funciona",
+          "safety": "Seguridad y Confianza"
+        }
+      },
+      "company": {
+        "title": "Empresa",
+        "links": {
+          "about": "Acerca de RSG",
+          "blog": "Blog",
+          "careers": "Carreras",
+          "press": "Prensa"
+        }
+      },
+      "support": {
+        "title": "Soporte",
+        "links": {
+          "helpCenter": "Centro de Ayuda",
+          "contact": "Contáctanos",
+          "privacy": "Política de Privacidad",
+          "terms": "Términos de Servicio"
+        }
+      }
+    },
+    "copyright": "© {year} RideShare Guides. Todos los derechos reservados.",
+    "tagline": "Construido por conductores, para conductores."
+  }
+}

@@ -2,12 +2,16 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
+import { LanguageSwitcher } from '../ui/LanguageSwitcher'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function Header() {
+  const t = useTranslations('header')
+  const common = useTranslations('common')
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -21,10 +25,9 @@ export function Header() {
   }, [])
 
   const navLinks = [
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Features', href: '#features' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'FAQ', href: '#faq' },
+    { label: t('menu.howItWorks'), href: '#how-it-works' },
+    { label: t('menu.features'), href: '#features' },
+    { label: t('menu.faq'), href: '#faq' },
   ]
 
   return (
@@ -38,20 +41,20 @@ export function Header() {
     >
       <Container >
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
-            <Image
-              src="/images/logos/rsg-logo.png"
-              alt="RideShare Guides Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-              priority
-            />
-            <span className="text-xl font-bold text-neutral-900">
-              RideShare Guides
-            </span>
-          </a>
+           {/* Logo */}
+           <a href="/" className="flex items-center gap-3">
+             <Image
+               src="/images/logos/rsg-logo.png"
+               alt="RideShare Guides Logo"
+               width={120}
+               height={40}
+               className="h-10 w-auto"
+               priority
+             />
+             <span className="text-xl font-bold text-neutral-900">
+               RideShareGuides.com
+             </span>
+           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
@@ -66,13 +69,11 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons & Language Switcher */}
           <div className="hidden items-center gap-4 md:flex">
-            <Button variant="ghost" size="sm" href="#signup">
-              Sign In
-            </Button>
+            <LanguageSwitcher />
             <Button variant="primary" size="sm" href="#signup">
-              Join Free
+              {common('joinFree')}
             </Button>
           </div>
 
@@ -106,11 +107,11 @@ export function Header() {
               ))}
               <hr className="border-neutral-100" />
               <div className="flex flex-col gap-3">
-                <Button variant="ghost" size="lg" href="#signup" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
-                  Sign In
-                </Button>
+                <div className="flex justify-center">
+                  <LanguageSwitcher />
+                </div>
                 <Button variant="primary" size="lg" href="#signup" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
-                  Join Free
+                  {common('joinFree')}
                 </Button>
               </div>
             </nav>

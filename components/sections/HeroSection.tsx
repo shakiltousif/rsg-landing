@@ -1,13 +1,14 @@
 'use client'
 
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Button } from '../ui/Button'
 import { Container } from '../ui/Container'
 import { FadeIn } from '../animations/FadeIn'
 import { Check, ArrowRight, Star, Shield, Smartphone } from 'lucide-react'
-import { heroContent } from '@/lib/content'
 
 export function HeroSection() {
+  const t = useTranslations('hero')
   return (
     <section className="relative overflow-hidden bg-white pt-24 pb-16 lg:pt-32 lg:pb-28">
       {/* Background blobs - Hidden on mobile to keep it clean */}
@@ -21,16 +22,16 @@ export function HeroSection() {
             <FadeIn delay={0.1}>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-sm font-medium text-primary-700 ring-1 ring-inset ring-primary-200 mb-6">
                 <span className="flex h-2 w-2 rounded-full bg-primary-600" />
-                The #1 Platform for Independent Drivers
+                {t('badge')}
               </div>
               <h1 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl xl:text-7xl mb-6">
-                {heroContent.headline}
+                {t('headline')}
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-lg leading-relaxed text-neutral-600 sm:text-xl mb-8">
-                {heroContent.subheadline}
+                {t('subheadline')}
               </p>
             </FadeIn>
 
@@ -41,19 +42,19 @@ export function HeroSection() {
                   variant="primary"
                   size="md"
                   className="sm:text-lg sm:px-8 sm:py-3.5"
-                  href={heroContent.primaryCTA.href}
+                  href="#signup"
                   icon={<ArrowRight className="h-5 w-5" />}
                   iconPosition="right"
                 >
-                  {heroContent.primaryCTA.text}
+                  {t('primaryCTA')}
                 </Button>
                 <Button
                   variant="secondary"
                   size="md"
                   className="sm:text-lg sm:px-8 sm:py-3.5"
-                  href={heroContent.secondaryCTA.href}
+                  href="https://BookTheDon.com"
                 >
-                  {heroContent.secondaryCTA.text}
+                  {t('secondaryCTA')}
                 </Button>
               </div>
             </FadeIn>
@@ -61,25 +62,41 @@ export function HeroSection() {
             {/* Benefits List */}
             <FadeIn delay={0.4}>
               <div className="grid gap-3 sm:grid-cols-2 mb-6">
-                {heroContent.benefits.map((benefit, index) => (
+                {['alwaysFree', 'worldwide', 'buildBusiness', 'connectGlobally'].map((key, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="flex-shrink-0 flex h-5 w-5 items-center justify-center rounded-full bg-success-100 text-success-600">
                       <Check className="h-3 w-3" />
                     </div>
                     <span className="text-sm font-medium text-neutral-700">
-                      {benefit}
+                      {t(`benefits.${key}`)}
                     </span>
                   </div>
                 ))}
-              </div>
-              
-              {/* Rider CTA Banner */}
-              <div className="rounded-xl bg-gradient-to-r from-accent-50 to-primary-50 p-4 border border-accent-200">
+               </div>
+
+               {/* QR Code Card */}
+               <div className="mb-6 flex flex-col items-center">
+                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-neutral-200">
+                   <Image
+                     src="/images/qr_code_links/rideshareguides.com.png"
+                     alt="RideShare Guides QR Code"
+                     width={200}
+                     height={200}
+                     className="w-48 h-48 object-contain"
+                   />
+                 </div>
+                 <p className="mt-4 text-xs text-neutral-600 text-center">
+                   Scan to join today
+                 </p>
+               </div>
+               
+               {/* Rider CTA Banner */}
+               <div className="rounded-xl bg-gradient-to-r from-accent-50 to-primary-50 p-4 border border-accent-200">
                 <div className="flex items-center gap-3">
                   <Smartphone className="h-6 w-6 text-primary-600 flex-shrink-0" />
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-neutral-900">
-                      Need a Ride?
+                      {t('riderCTA.title')}
                     </p>
                     <a 
                       href="https://BookTheDon.com" 
@@ -87,7 +104,7 @@ export function HeroSection() {
                       rel="noopener noreferrer"
                       className="text-sm text-primary-600 hover:text-primary-700 font-medium underline"
                     >
-                      Book now at BookTheDon.com →
+                      {t('riderCTA.button')} →
                     </a>
                   </div>
                 </div>

@@ -42,9 +42,9 @@ export function CommunityInfluencers() {
             <Card variant="elevated" className="overflow-hidden bg-gradient-to-br from-primary-900 to-primary-800 text-white">
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-4">
-                  <PlayCircle className="h-6 w-6 text-accent-400" />
-                  <h4 className="text-lg font-bold">Watch Our Influencers in Action</h4>
-                </div>
+                   <PlayCircle className="h-6 w-6 text-accent-400" />
+                   <h4 className="text-lg font-bold text-white">Watch Our Influencers in Action</h4>
+                 </div>
                 <p className="text-sm mb-6 text-primary-100">
                   See how our community leaders are earning, growing, and helping others succeed. Join the network and get featured!
                 </p>
@@ -66,27 +66,41 @@ export function CommunityInfluencers() {
                   ))}
                 </div>
                 
-                <div className="text-center">
-                  <a
-                    href="https://dev.rideshareguides.com/vlogs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
-                  >
-                    <PlayCircle className="h-5 w-5" />
-                    Watch More Vlogs & Join Our Community
-                  </a>
-                </div>
+                <div className="text-center space-y-6">
+                   <a
+                     href="https://dev.rideshareguides.com/vlogs"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+                   >
+                     <PlayCircle className="h-5 w-5" />
+                     Watch More Vlogs & Join Our Community
+                   </a>
+
+                   {/* QR Code for Vlogs */}
+                   <div className="flex flex-col items-center">
+                     <div className="rounded-2xl bg-white p-4 shadow-lg ring-1 ring-neutral-200">
+                       <Image
+                         src="/images/qr_code_links/rideshareguides.com_vlogs.png"
+                         alt="Scan to watch community vlogs"
+                         width={150}
+                         height={150}
+                         className="w-40 h-40 object-contain"
+                       />
+                     </div>
+                     <p className="text-xs text-primary-100 mt-2">Scan to watch vlogs</p>
+                   </div>
+                 </div>
               </div>
             </Card>
           </FadeIn>
 
           {/* Featured Community Leaders Section */}
-          <FadeIn delay={0.2}>
-            <div className="mb-8">
-              <h4 className="mb-6 text-xl font-bold text-neutral-900">
-                Featured Community Leaders:
-              </h4>
+           <FadeIn delay={0.2}>
+             <div className="mb-8">
+               <h4 className="mb-6 text-xl font-bold text-neutral-900 text-center">
+                 Featured Community Leaders:
+               </h4>
               <ScrollReveal className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {communityInfluencers.leaders.map((leader, index) => {
                   const Icon = iconMap[leader.title as keyof typeof iconMap]

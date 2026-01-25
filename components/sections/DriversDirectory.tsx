@@ -1,15 +1,19 @@
+'use client'
+
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
-import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
 import { Button } from '../ui/Button'
 import { Tabs } from '../ui/Tabs'
 import { Check, Search, MapPin, Star } from 'lucide-react'
 import { FadeIn } from '../animations/FadeIn'
-import { sections } from '@/lib/content'
 
 export function DriversDirectory() {
-  const { driversDirectory } = sections
+  const t = useTranslations('driversDirectory')
+  const common = useTranslations('common')
+
+  const driverBenefits = ['freeProfile', 'showcase', 'ratings', 'driverId', 'availability', 'connect']
 
   const driverTab = (
     <div className="space-y-8">
@@ -17,20 +21,20 @@ export function DriversDirectory() {
         {/* Benefits List */}
         <div className="space-y-6">
           <h3 className="text-4xl font-black text-neutral-900 sm:text-5xl lg:text-6xl">
-            {driversDirectory.forDrivers.title}
+            {t('forDrivers.title')}
           </h3>
           <div className="space-y-4">
-            {driversDirectory.forDrivers.benefits.map((benefit, index) => (
+            {driverBenefits.map((benefit, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-success-100">
                   <Check className="h-3 w-3 text-success-600" />
                 </div>
-                <span className="text-base text-neutral-700">{benefit}</span>
+                <span className="text-base text-neutral-700">{t(`forDrivers.benefits.${benefit}`)}</span>
               </div>
             ))}
           </div>
           <Button variant="primary" size="lg">
-            Create Your Free RSG Directory Listing
+            {t('forDrivers.cta')}
           </Button>
         </div>
 
@@ -53,10 +57,10 @@ export function DriversDirectory() {
   const riderTab = (
     <div className="space-y-6">
       <h3 className="text-2xl font-bold text-neutral-900">
-        {driversDirectory.forRiders.title}
+        {t('forRiders.title')}
       </h3>
       <p className="text-lg text-neutral-600">
-        {driversDirectory.forRiders.description}
+        {t('forRiders.description')}
       </p>
 
       <div className="grid gap-6 md:grid-cols-3">
@@ -64,9 +68,9 @@ export function DriversDirectory() {
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary-100">
             <Search className="h-6 w-6 text-primary-600" />
           </div>
-          <h4 className="font-semibold text-neutral-900">Search by Location</h4>
+          <h4 className="font-semibold text-neutral-900">{t('forRiders.features.searchLocation.title')}</h4>
           <p className="mt-2 text-sm text-neutral-600">
-            Find professional drivers in your area
+            {t('forRiders.features.searchLocation.description')}
           </p>
         </Card>
 
@@ -74,9 +78,9 @@ export function DriversDirectory() {
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-100">
             <Star className="h-6 w-6 text-accent-600" />
           </div>
-          <h4 className="font-semibold text-neutral-900">Verified Ratings</h4>
+          <h4 className="font-semibold text-neutral-900">{t('forRiders.features.verifiedRatings.title')}</h4>
           <p className="mt-2 text-sm text-neutral-600">
-            See reviews from real customers
+            {t('forRiders.features.verifiedRatings.description')}
           </p>
         </Card>
 
@@ -84,9 +88,9 @@ export function DriversDirectory() {
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-success-100">
             <MapPin className="h-6 w-6 text-success-600" />
           </div>
-          <h4 className="font-semibold text-neutral-900">Direct Contact</h4>
+          <h4 className="font-semibold text-neutral-900">{t('forRiders.features.directContact.title')}</h4>
           <p className="mt-2 text-sm text-neutral-600">
-            Book directly with your preferred driver
+            {t('forRiders.features.directContact.description')}
           </p>
         </Card>
       </div>
@@ -94,31 +98,60 @@ export function DriversDirectory() {
       <div className="flex flex-col sm:flex-row gap-4 justify-center text-center">
         <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
           <Button variant="primary" size="lg">
-            Book a Ride at BookTheDon.com
+            {t('forRiders.bookRide')}
           </Button>
         </a>
         <Button variant="secondary" size="lg">
-          Browse Driver Directory
+          {t('forRiders.browseDirectory')}
         </Button>
       </div>
     </div>
   )
 
   const tabs = [
-    { id: 'drivers', label: 'For Drivers', content: driverTab },
-    { id: 'riders', label: 'For Riders', content: riderTab },
+    { id: 'drivers', label: common('forDrivers'), content: driverTab },
+    { id: 'riders', label: common('forRiders'), content: riderTab },
   ]
 
   return (
     <section className="bg-neutral-50 py-10 lg:py-24">
       <Container>
         <FadeIn>
-          <SectionHeader
-            eyebrow="Get Discovered"
-            heading="Free RSG Drivers Directory"
-            description="Your profile in a searchable directory connecting professional drivers with riders seeking quality service."
-            className="mb-12"
-          />
+          <div className="text-center mb-12">
+            <div className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-4">
+              {t('eyebrow')}
+            </div>
+            {/* Yellow highlighted section */}
+            <div className="relative mb-8">
+              <div className="absolute inset-0 bg-yellow-300 rounded-3xl transform -skew-y-2 opacity-70"></div>
+              <div className="relative px-8 py-6">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-neutral-900">
+                  The RSG Drivers Directory<br />Members Only
+                </h2>
+              </div>
+            </div>
+            <p className="mx-auto max-w-2xl text-base sm:text-lg text-neutral-600">
+              {t('description')}
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* QR Code Section */}
+        <FadeIn delay={0.1}>
+          <div className="mb-12 flex flex-col items-center">
+            <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-neutral-200">
+              <Image
+                src="/images/qr_code_links/driver_directory_link.png"
+                alt="RSG Drivers Directory QR Code"
+                width={300}
+                height={300}
+                className="w-64 h-64 object-contain"
+              />
+            </div>
+            <p className="mt-6 text-sm text-neutral-600 text-center max-w-xs">
+              Scan to access the RSG Drivers Directory
+            </p>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.2}>

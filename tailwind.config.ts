@@ -64,8 +64,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-lexend)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-lexend)', 'var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
       },
     },
   },

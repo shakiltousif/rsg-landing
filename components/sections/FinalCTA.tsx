@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Container } from '../ui/Container'
 import { Button } from '../ui/Button'
 import { Card } from '../ui/Card'
@@ -127,9 +128,27 @@ export function FinalCTA() {
               </div>
             </div>
           </FadeIn>
-        </div>
+         </div>
 
-        {/* Support Footer */}
+         {/* QR Code Section */}
+         <FadeIn delay={0.25}>
+           <div className="mb-20 flex flex-col items-center">
+             <div className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-neutral-200">
+               <Image
+                 src="/images/qr_code_links/rideshareguides.com.png"
+                 alt="RideShare Guides QR Code"
+                 width={300}
+                 height={300}
+                 className="w-56 h-56 object-contain"
+               />
+             </div>
+             <p className="mt-6 text-sm text-neutral-300 text-center max-w-xs">
+               Scan to join RideShare Guides today
+             </p>
+           </div>
+         </FadeIn>
+
+         {/* Support Footer */}
         <FadeIn delay={0.3}>
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/50 p-8 text-center backdrop-blur">
             <h3 className="mb-6 text-xl font-semibold text-white">Questions? We're Here to Help</h3>

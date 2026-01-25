@@ -1,16 +1,16 @@
 'use client'
 
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
 import { Button } from '../ui/Button'
 import { FadeIn } from '../animations/FadeIn'
 import { Building2, Hash, Zap, CheckCircle2, Smartphone, Apple } from 'lucide-react'
-import { sections } from '@/lib/content'
 
 export function DonReservations() {
-  const { donReservations } = sections
+  const t = useTranslations('donReservations')
 
   return (
     <section className="py-10 lg:py-24 bg-neutral-50">
@@ -18,7 +18,7 @@ export function DonReservations() {
         <FadeIn>
           <div className="text-center mb-8">
             <div className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-4">
-              100% OF EVERY FARE
+              {t('eyebrow')}
             </div>
             {/* Logo as Header */}
             <div className="mb-6">
@@ -31,13 +31,13 @@ export function DonReservations() {
               />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-2">
-              The Don Reservations app
+              {t('heading')}
             </h2>
             <p className="text-base sm:text-lg text-neutral-600 font-medium mb-4">
-              aka The Driver-Owned Network app
+              {t('subheading')}
             </p>
             <p className="mx-auto max-w-2xl text-base sm:text-lg text-neutral-600">
-              {donReservations.description}
+              {t('description')}
             </p>
           </div>
         </FadeIn>
@@ -45,7 +45,7 @@ export function DonReservations() {
         {/* Download Buttons */}
         <FadeIn delay={0.1}>
           <div className="mb-12 flex flex-col items-center text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a 
                 href="https://apps.apple.com/app/don-reservations" 
                 target="_blank" 
@@ -75,6 +75,34 @@ export function DonReservations() {
                 />
               </a>
             </div>
+
+            {/* QR Codes for App Downloads */}
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+              <div className="flex flex-col items-center">
+                <div className="rounded-2xl bg-white p-4 shadow-lg ring-1 ring-neutral-200 mb-2">
+                  <Image
+                    src="/images/qr_code_links/don_driver_app_link_app_store.png"
+                    alt="Download The Don on App Store"
+                    width={140}
+                    height={140}
+                    className="w-36 h-36 object-contain"
+                  />
+                </div>
+                <p className="text-xs text-neutral-600">iOS App</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="rounded-2xl bg-white p-4 shadow-lg ring-1 ring-neutral-200 mb-2">
+                  <Image
+                    src="/images/qr_code_links/driver_app_link_playstore.png"
+                    alt="Download The Don on Google Play"
+                    width={140}
+                    height={140}
+                    className="w-36 h-36 object-contain"
+                  />
+                </div>
+                <p className="text-xs text-neutral-600">Android App</p>
+              </div>
+            </div>
           </div>
         </FadeIn>
 
@@ -82,7 +110,7 @@ export function DonReservations() {
           {/* Left: Key Points & Process */}
           <div className="space-y-10">
             <div className="space-y-8">
-              {donReservations.whyYouNeedIt.map((point, index) => {
+              {(['buildBusiness', 'secureId', 'familiarTech'] as const).map((key, index) => {
                 const icons = [Building2, Hash, Zap]
                 const Icon = icons[index]
 
@@ -94,9 +122,9 @@ export function DonReservations() {
                       </div>
                       <div>
                         <h3 className="mb-2 text-xl font-bold text-neutral-900">
-                          {point.title}
+                          {t(`whyYouNeedIt.${key}.title`)}
                         </h3>
-                        <p className="text-neutral-600 leading-relaxed">{point.description}</p>
+                        <p className="text-neutral-600 leading-relaxed">{t(`whyYouNeedIt.${key}.description`)}</p>
                       </div>
                     </div>
                   </FadeIn>
@@ -108,14 +136,14 @@ export function DonReservations() {
             <FadeIn delay={0.4}>
               <Card variant="elevated" className="bg-neutral-900 text-white p-8 overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary-600/20 blur-3xl rounded-full" />
-                <h3 className="mb-6 text-xl font-bold text-white relative z-10">How to Get Started</h3>
+                <h3 className="mb-6 text-xl font-bold text-white relative z-10">{t('howToGetStarted')}</h3>
                 <div className="space-y-4 relative z-10">
-                  {donReservations.steps.map((step, index) => (
+                  {(['step1', 'step2', 'step3', 'step4', 'step5'] as const).map((step, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary-600 text-xs font-bold shadow-lg shadow-primary-900/20">
                         {index + 1}
                       </div>
-                      <p className="text-sm text-neutral-300 pt-0.5">{step}</p>
+                      <p className="text-sm text-neutral-300 pt-0.5">{t(`steps.${step}`)}</p>
                     </div>
                   ))}
                 </div>
@@ -127,7 +155,7 @@ export function DonReservations() {
               <div className="rounded-xl bg-accent-50 p-4 border border-accent-100 flex gap-3">
                  <CheckCircle2 className="h-5 w-5 text-accent-600 flex-shrink-0 mt-0.5" />
                  <p className="text-sm font-medium text-accent-900">
-                  <strong>Disclaimer:</strong> The Don Reservations is a SaaS company and not a rideshare company. All drivers operate as independent contractors of their own business. NYC TLC drivers are required to have active TLC permits as well as TLC commercial plates and insurance to use the platform.
+                  {t('disclaimer')}
                 </p>
               </div>
             </FadeIn>
@@ -160,16 +188,16 @@ export function DonReservations() {
              <div className="mt-12 text-center lg:text-left space-y-4">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="primary" size="lg" className="shadow-xl" href="#signup">
-                    Get Your Driver ID #
+                    {t('getDriverId')}
                   </Button>
                   <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
                     <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                      Book a Ride Now
+                      {t('bookRideNow')}
                     </Button>
                   </a>
                 </div>
                 <p className="text-center text-sm text-neutral-600">
-                  <span className="font-semibold">Riders:</span> Book your ride instantly at{' '}
+                  <span className="font-semibold">{t('ridersNote')}</span>{' '}
                   <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">
                     BookTheDon.com
                   </a>

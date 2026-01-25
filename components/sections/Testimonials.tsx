@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
@@ -9,6 +12,8 @@ import { Quote } from 'lucide-react'
 import { testimonials } from '@/lib/content'
 
 export function Testimonials() {
+  const t = useTranslations('testimonials')
+  const common = useTranslations('common')
   const avatarImages = [
     '/images/testimonials/avatar-1.png',
     '/images/testimonials/avatar-2.png',
@@ -19,14 +24,14 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="bg-neutral-50 py-10 lg:py-24">
       <Container>
-        <FadeIn>
-          <SectionHeader
-            eyebrow="Success Stories"
-            heading="What Our Members Say"
-            description="Real experiences from drivers and riders who are building their transportation businesses on RSG."
-            className="mb-12"
-          />
-        </FadeIn>
+         <FadeIn>
+           <SectionHeader
+             eyebrow={t('eyebrow')}
+             heading={t('heading')}
+             description={t('description')}
+             className="mb-12"
+           />
+         </FadeIn>
 
         <ScrollReveal className="grid gap-6 sm:grid-cols-2 lg:gap-8">
           {testimonials.map((testimonial, index) => (
@@ -57,12 +62,12 @@ export function Testimonials() {
                   </p>
                   <p className="text-sm text-neutral-600">{testimonial.location}</p>
                 </div>
-                <Badge
-                  variant={testimonial.role === 'driver' ? 'driver' : 'rider'}
-                  size="md"
-                >
-                  {testimonial.role === 'driver' ? 'Driver' : 'Rider'}
-                </Badge>
+                 <Badge
+                   variant={testimonial.role === 'driver' ? 'driver' : 'rider'}
+                   size="md"
+                 >
+                   {testimonial.role === 'driver' ? common('driver') : common('rider')}
+                 </Badge>
               </div>
             </Card>
           ))}

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Tabs } from '../ui/Tabs'
@@ -12,6 +13,8 @@ import { faqsForDrivers, faqsForRiders, faqsGeneral } from '@/lib/content'
 import type { FAQ } from '@/types'
 
 export function FAQSection() {
+  const t = useTranslations('faq')
+  const common = useTranslations('common')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Filter FAQs based on search query
@@ -29,9 +32,9 @@ export function FAQSection() {
   // Drivers Tab Content
   const driversContent = (
     <div className="space-y-8">
-      {/* Money & Earnings */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">💰 Money & Earnings</h3>
+       {/* Money & Earnings */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">💰 {t('categories.moneyEarnings')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.moneyEarnings).map((faq, idx) => ({
             id: `money-${idx}`,
@@ -42,9 +45,9 @@ export function FAQSection() {
         />
       </div>
 
-       {/* Digital Business Card */}
-       <div>
-         <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 RSG Digital Business Card</h3>
+        {/* Digital Business Card */}
+        <div>
+          <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 {t('categories.digitalCard')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.digitalCard).map((faq, idx) => ({
             id: `card-${idx}`,
@@ -55,9 +58,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Personal Driver ID */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">🎫 Personal Driver ID #</h3>
+       {/* Personal Driver ID */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">🎫 {t('categories.driverId')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.driverId).map((faq, idx) => ({
             id: `id-${idx}`,
@@ -68,9 +71,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* The Don Reservations System */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">🚗 The Don Reservations System</h3>
+       {/* The Don Reservations System */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">🚗 {t('categories.donReservations')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.donReservations).map((faq, idx) => ({
             id: `don-${idx}`,
@@ -81,9 +84,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Community & Networking */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">👥 Community & Networking</h3>
+       {/* Community & Networking */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">👥 {t('categories.community')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.community).map((faq, idx) => ({
             id: `community-${idx}`,
@@ -94,9 +97,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* RSG Drivers Directory */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">📂 RSG Drivers Directory</h3>
+       {/* RSG Drivers Directory */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">📂 {t('categories.directory')}</h3>
         <Accordion
           items={filterFAQs(faqsForDrivers.directory).map((faq, idx) => ({
             id: `directory-${idx}`,
@@ -112,9 +115,9 @@ export function FAQSection() {
   // Riders Tab Content
   const ridersContent = (
     <div className="space-y-8">
-      {/* Pricing & Savings */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">💵 Pricing & Savings</h3>
+       {/* Pricing & Savings */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">💵 {t('categories.pricingSavings')}</h3>
         <Accordion
           items={filterFAQs(faqsForRiders.pricingSavings).map((faq, idx) => ({
             id: `pricing-${idx}`,
@@ -125,9 +128,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Safety & Trust */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">🛡️ Safety & Trust</h3>
+       {/* Safety & Trust */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">🛡️ {t('categories.safetyTrust')}</h3>
         <Accordion
           items={filterFAQs(faqsForRiders.safetyTrust).map((faq, idx) => ({
             id: `safety-${idx}`,
@@ -138,9 +141,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Using the Platform */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 Using the Platform</h3>
+       {/* Using the Platform */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">📱 {t('categories.usingPlatform')}</h3>
         <Accordion
           items={filterFAQs(faqsForRiders.usingPlatform).map((faq, idx) => ({
             id: `using-${idx}`,
@@ -151,9 +154,9 @@ export function FAQSection() {
         />
       </div>
 
-      {/* Benefits for Riders */}
-      <div>
-        <h3 className="mb-4 text-xl font-bold text-neutral-900">🎯 Benefits for Riders</h3>
+       {/* Benefits for Riders */}
+       <div>
+         <h3 className="mb-4 text-xl font-bold text-neutral-900">🎯 {t('categories.benefits')}</h3>
         <Accordion
           items={filterFAQs(faqsForRiders.benefits).map((faq, idx) => ({
             id: `benefits-${idx}`,
@@ -181,9 +184,9 @@ export function FAQSection() {
   )
 
   const tabs = [
-    { id: 'drivers', label: 'For Drivers', content: driversContent },
-    { id: 'riders', label: 'For Riders', content: ridersContent },
-    { id: 'general', label: 'General', content: generalContent },
+    { id: 'drivers', label: common('forDrivers'), content: driversContent },
+    { id: 'riders', label: common('forRiders'), content: ridersContent },
+    { id: 'general', label: common('general'), content: generalContent },
   ]
 
   // Count total filtered results
@@ -200,79 +203,79 @@ export function FAQSection() {
   return (
     <section id="faq" className="py-10 lg:py-24">
       <Container>
-        <FadeIn>
-          <SectionHeader
-            eyebrow="Got Questions?"
-            heading="Frequently Asked Questions"
-            description="Everything you need to know about RSG, digital business cards, and The Don Reservations system."
-            className="mb-12"
-          />
-        </FadeIn>
+         <FadeIn>
+           <SectionHeader
+             eyebrow={t('eyebrow')}
+             heading={t('heading')}
+             description={t('description')}
+             className="mb-12"
+           />
+         </FadeIn>
 
         {/* Search Bar */}
         <FadeIn delay={0.1}>
           <Card className="mb-8">
             <div className="relative">
               <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-neutral-400" />
-              <input
-                type="text"
-                placeholder="Search FAQs... (e.g., 'How much can I make?')"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full rounded-lg border-2 border-neutral-200 py-3 pl-12 pr-12 text-neutral-900 placeholder-neutral-400 transition-colors focus:border-primary-500 focus:outline-none"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 transition-colors hover:text-neutral-600"
-                  aria-label="Clear search"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              )}
-            </div>
-            {searchQuery && (
-              <p className="mt-2 text-sm text-neutral-600">
-                Found {totalResults} result{totalResults !== 1 ? 's' : ''} for "{searchQuery}"
-              </p>
-            )}
+               <input
+                 type="text"
+                 placeholder={t('searchPlaceholder')}
+                 value={searchQuery}
+                 onChange={(e) => setSearchQuery(e.target.value)}
+                 className="w-full rounded-lg border-2 border-neutral-200 py-3 pl-12 pr-12 text-neutral-900 placeholder-neutral-400 transition-colors focus:border-primary-500 focus:outline-none"
+               />
+               {searchQuery && (
+                 <button
+                   onClick={() => setSearchQuery('')}
+                   className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 transition-colors hover:text-neutral-600"
+                   aria-label="Clear search"
+                 >
+                   <X className="h-5 w-5" />
+                 </button>
+               )}
+             </div>
+             {searchQuery && (
+               <p className="mt-2 text-sm text-neutral-600">
+                 {t('foundResults', { count: totalResults, query: searchQuery })}
+               </p>
+             )}
           </Card>
         </FadeIn>
 
         {/* FAQ Tabs */}
         <FadeIn delay={0.2}>
-          {totalResults === 0 ? (
-            <Card className="py-12 text-center">
-              <p className="text-lg text-neutral-600">
-                No results found for "{searchQuery}". Try a different search term.
-              </p>
-            </Card>
-          ) : (
-            <Tabs tabs={tabs} defaultTab="drivers" />
-          )}
+           {totalResults === 0 ? (
+             <Card className="py-12 text-center">
+               <p className="text-lg text-neutral-600">
+                 {t('noResults', { query: searchQuery })}
+               </p>
+             </Card>
+           ) : (
+             <Tabs tabs={tabs} defaultTab="drivers" />
+           )}
         </FadeIn>
 
         {/* Still Have Questions CTA */}
         <FadeIn delay={0.3}>
-          <Card variant="bordered" className="mt-12 border-primary-300 bg-primary-50 text-center">
-            <h3 className="mb-2 text-xl font-bold text-neutral-900">
-              Still Have Questions?
-            </h3>
-            <p className="mb-4 text-neutral-600">
-              Our support team is here to help 7 days a week.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href="mailto:support@rideshareguides.com"
-                className="inline-flex items-center rounded-lg bg-primary-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-primary-600"
-              >
-                Email Support
-              </a>
-              <button className="inline-flex items-center rounded-lg border-2 border-primary-500 px-6 py-2 font-semibold text-primary-600 transition-colors hover:bg-primary-50">
-                Live Chat
-              </button>
-            </div>
-          </Card>
+           <Card variant="bordered" className="mt-12 border-primary-300 bg-primary-50 text-center">
+             <h3 className="mb-2 text-xl font-bold text-neutral-900">
+               {t('stillQuestions.title')}
+             </h3>
+             <p className="mb-4 text-neutral-600">
+               {t('stillQuestions.description')}
+             </p>
+             <div className="flex flex-wrap justify-center gap-3">
+               <a
+                 href="mailto:support@rideshareguides.com"
+                 className="inline-flex items-center rounded-lg bg-primary-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-primary-600"
+               >
+                 {t('stillQuestions.emailSupport')}
+               </a>
+               <button className="inline-flex items-center rounded-lg border-2 border-primary-500 px-6 py-2 font-semibold text-primary-600 transition-colors hover:bg-primary-50">
+                 {t('stillQuestions.liveChat')}
+               </button>
+             </div>
+           </Card>
         </FadeIn>
       </Container>
     </section>

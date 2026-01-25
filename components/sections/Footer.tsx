@@ -1,27 +1,32 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Container } from '../ui/Container'
 import { Youtube, Facebook, Instagram, Twitter } from 'lucide-react'
 import { contactInfo } from '@/lib/content'
 
 export function Footer() {
+  const t = useTranslations('footer')
+
   const quickLinks = [
-    { label: 'About RSG', href: '#about' },
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Blog', href: '#blog' },
+    { label: t('sections.company.links.about'), href: '#about' },
+    { label: t('sections.company.links.blog'), href: '#blog' },
+    { label: t('sections.company.links.careers'), href: '#careers' },
+    { label: t('sections.company.links.press'), href: '#press' },
   ]
 
   const forDrivers = [
-    { label: 'Join Free', href: '#signup' },
-    { label: 'Get Driver ID #', href: '#driver-id' },
-    { label: 'The Don Reservations', href: '#don-reservations' },
-    { label: 'Drivers Directory', href: '#directory' },
+    { label: t('sections.forDrivers.links.joinFree'), href: '#signup' },
+    { label: t('sections.forDrivers.links.digitalCard'), href: '#digital-card' },
+    { label: t('sections.forDrivers.links.donReservations'), href: '#don-reservations' },
+    { label: t('sections.forDrivers.links.directory'), href: '#directory' },
   ]
 
   const forRiders = [
-    { label: 'Find Drivers', href: '#find-drivers' },
-    { label: 'How to Book', href: '#how-to-book' },
-    { label: 'Safety & Trust', href: '#safety' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: t('sections.forRiders.links.findDriver'), href: '#find-drivers' },
+    { label: t('sections.forRiders.links.bookRide'), href: '#book-ride' },
+    { label: t('sections.forRiders.links.howItWorks'), href: '#how-it-works' },
+    { label: t('sections.forRiders.links.safety'), href: '#safety' },
   ]
 
   const socialLinks = [
@@ -36,12 +41,12 @@ export function Footer() {
       <Container>
         {/* Main Footer Content */}
         <div className="grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-5">
-          {/* Column 1: Logo & Tagline */}
-          <div className="lg:col-span-1">
-            <h3 className="mb-4 text-2xl font-bold text-white">RSG</h3>
-            <p className="mb-4 text-sm">
-              The professional platform for independent contractors, drivers and riders worldwide.
-            </p>
+           {/* Column 1: Logo & Tagline */}
+           <div className="lg:col-span-1">
+             <h3 className="mb-4 text-2xl font-bold text-white">RSG</h3>
+             <p className="mb-4 text-sm">
+               {t('description')}
+             </p>
             {/* Social Links */}
             <div className="flex gap-3">
               {socialLinks.map((social) => {
@@ -62,9 +67,9 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h4 className="mb-4 font-semibold text-white">Quick Links</h4>
+           {/* Column 2: Quick Links */}
+           <div>
+             <h4 className="mb-4 font-semibold text-white">{t('sections.company.title')}</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -79,9 +84,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: For Drivers */}
-          <div>
-            <h4 className="mb-4 font-semibold text-white">For Drivers</h4>
+           {/* Column 3: For Drivers */}
+           <div>
+             <h4 className="mb-4 font-semibold text-white">{t('sections.forDrivers.title')}</h4>
             <ul className="space-y-2">
               {forDrivers.map((link) => (
                 <li key={link.label}>
@@ -96,9 +101,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: For Riders */}
-          <div>
-            <h4 className="mb-4 font-semibold text-white">For Riders</h4>
+           {/* Column 4: For Riders */}
+           <div>
+             <h4 className="mb-4 font-semibold text-white">{t('sections.forRiders.title')}</h4>
             <ul className="space-y-2">
               {forRiders.map((link) => (
                 <li key={link.label}>
@@ -113,9 +118,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Contact */}
-          <div>
-            <h4 className="mb-4 font-semibold text-white">Contact</h4>
+           {/* Column 5: Contact */}
+           <div>
+             <h4 className="mb-4 font-semibold text-white">{t('sections.support.title')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
@@ -132,33 +137,33 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 py-8">
-          {/* Legal Disclaimer */}
-          <div className="mb-6 text-xs text-neutral-400">
-            <p className="mb-2">
-              <strong>Important:</strong> RSG provides a platform for connecting drivers and
-              riders. All drivers must maintain their own commercial insurance and required
-              licenses. RSG does not provide insurance, vehicles, or employment.
-            </p>
-            <p>
-              By using RSG, you acknowledge that all transactions are between drivers and
-              riders directly. Please ensure compliance with local transportation regulations.
-            </p>
-          </div>
+           {/* Legal Disclaimer */}
+           <div className="mb-6 text-xs text-neutral-400">
+             <p className="mb-2">
+               <strong>Important:</strong> RSG provides a platform for connecting drivers and
+               riders. All drivers must maintain their own commercial insurance and required
+               licenses. RSG does not provide insurance, vehicles, or employment.
+             </p>
+             <p>
+               By using RSG, you acknowledge that all transactions are between drivers and
+               riders directly. Please ensure compliance with local transportation regulations.
+             </p>
+           </div>
 
-          {/* Copyright & Legal Links */}
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-neutral-400">
-              © {new Date().getFullYear()} RideShare Guides. All rights reserved.
-            </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#privacy" className="transition-colors hover:text-primary-400">
-                Privacy Policy
-              </a>
-              <a href="#terms" className="transition-colors hover:text-primary-400">
-                Terms of Service
-              </a>
-            </div>
-          </div>
+           {/* Copyright & Legal Links */}
+           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+             <p className="text-sm text-neutral-400">
+               {t('copyright', { year: new Date().getFullYear() })}
+             </p>
+             <div className="flex gap-6 text-sm">
+               <a href="#privacy" className="transition-colors hover:text-primary-400">
+                 {t('sections.support.links.privacy')}
+               </a>
+               <a href="#terms" className="transition-colors hover:text-primary-400">
+                 {t('sections.support.links.terms')}
+               </a>
+             </div>
+           </div>
         </div>
       </Container>
     </footer>

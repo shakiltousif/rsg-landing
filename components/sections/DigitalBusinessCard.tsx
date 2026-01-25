@@ -119,9 +119,11 @@ export function DigitalBusinessCard() {
             Book a Ride at BookTheDon.com
           </Button>
         </a>
-        <Button variant="secondary" size="lg">
-          Browse Driver Directory
-        </Button>
+        <a href="https://rideshareguides.com/driver" target="_blank" rel="noopener noreferrer">
+          <Button variant="secondary" size="lg">
+            Browse Driver Directory
+          </Button>
+        </a>
       </div>
     </div>
   )

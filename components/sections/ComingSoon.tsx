@@ -56,16 +56,18 @@ export function ComingSoon() {
           })}
         </ScrollReveal>
 
-        <FadeIn delay={0.4}>
-          <div className="text-center">
-            <Button variant="primary" size="lg">
-              {t('cta')}
-            </Button>
-            <p className="mt-4 text-sm text-neutral-600">
-              {t('ctaSubtext')}
-            </p>
-          </div>
-        </FadeIn>
+         <FadeIn delay={0.4}>
+           <div className="text-center">
+             <a href="https://www.rideshareguides.com" target="_blank" rel="noopener noreferrer">
+               <Button variant="primary" size="lg">
+                 {t('cta')}
+               </Button>
+             </a>
+             <p className="mt-4 text-sm text-neutral-600">
+               {t('ctaSubtext')}
+             </p>
+           </div>
+         </FadeIn>
       </Container>
     </section>
   )

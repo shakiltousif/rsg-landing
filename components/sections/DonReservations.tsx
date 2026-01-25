@@ -46,12 +46,12 @@ export function DonReservations() {
         <FadeIn delay={0.1}>
           <div className="mb-12 flex flex-col items-center text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a 
-                href="https://apps.apple.com/app/don-reservations" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex transition-transform hover:scale-105"
-              >
+               <a 
+                 href="https://apps.apple.com/us/app/the-don-reservations-driver/id6450992055" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-flex transition-transform hover:scale-105"
+               >
                 <Image
                   src="/images/badges/app-store-badge.png"
                   alt="Download on the App Store"
@@ -60,12 +60,12 @@ export function DonReservations() {
                   className="h-auto w-auto"
                 />
               </a>
-              <a 
-                href="https://play.google.com/store/apps/details?id=com.donreservations" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex transition-transform hover:scale-105"
-              >
+               <a 
+                 href="https://play.google.com/store/apps/details?id=com.don.driver&hl=en" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-flex transition-transform hover:scale-105"
+               >
                 <Image
                   src="/images/badges/play-store-badge.png"
                   alt="Get it on Google Play"

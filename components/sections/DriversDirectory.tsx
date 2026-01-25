@@ -33,9 +33,11 @@ export function DriversDirectory() {
               </div>
             ))}
           </div>
-          <Button variant="primary" size="lg">
-            {t('forDrivers.cta')}
-          </Button>
+           <a href="https://rideshareguides.com/driver" target="_blank" rel="noopener noreferrer">
+             <Button variant="primary" size="lg">
+               {t('forDrivers.cta')}
+             </Button>
+           </a>
         </div>
 
         {/* Directory Preview */}
@@ -95,16 +97,18 @@ export function DriversDirectory() {
         </Card>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center text-center">
-        <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
-          <Button variant="primary" size="lg">
-            {t('forRiders.bookRide')}
-          </Button>
-        </a>
-        <Button variant="secondary" size="lg">
-          {t('forRiders.browseDirectory')}
-        </Button>
-      </div>
+       <div className="flex flex-col sm:flex-row gap-4 justify-center text-center">
+         <a href="https://BookTheDon.com" target="_blank" rel="noopener noreferrer">
+           <Button variant="primary" size="lg">
+             {t('forRiders.bookRide')}
+           </Button>
+         </a>
+         <a href="https://rideshareguides.com/driver" target="_blank" rel="noopener noreferrer">
+           <Button variant="secondary" size="lg">
+             {t('forRiders.browseDirectory')}
+           </Button>
+         </a>
+       </div>
     </div>
   )
 

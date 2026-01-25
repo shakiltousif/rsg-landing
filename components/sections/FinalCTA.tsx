@@ -73,15 +73,16 @@ export function FinalCTA() {
                 </ul>
               </div>
 
-               <Button
-                 variant="primary"
-                 size="lg"
-                 fullWidth
-                 href="#signup"
-                 className="w-full"
-               >
-                 {t('forDrivers.cta')}
-               </Button>
+               <a href="https://www.rideshareguides.com/" target="_blank" rel="noopener noreferrer" className="w-full">
+                 <Button
+                   variant="primary"
+                   size="lg"
+                   fullWidth
+                   className="w-full"
+                 >
+                   {t('forDrivers.cta')}
+                 </Button>
+               </a>
             </div>
           </FadeIn>
 
@@ -119,15 +120,16 @@ export function FinalCTA() {
                      {t('forRiders.bookRide')}
                    </Button>
                  </a>
-                 <Button
-                   variant="secondary"
-                   size="lg"
-                   fullWidth
-                   href="#find-drivers"
-                   className="w-full border-neutral-700 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white"
-                 >
-                   {t('forRiders.findDriver')}
-                 </Button>
+                 <a href="https://www.rideshareguides.com/driver" target="_blank" rel="noopener noreferrer" className="w-full">
+                   <Button
+                     variant="secondary"
+                     size="lg"
+                     fullWidth
+                     className="w-full border-neutral-700 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white"
+                   >
+                     {t('forRiders.findDriver')}
+                   </Button>
+                 </a>
                </div>
             </div>
           </FadeIn>
@@ -164,19 +166,9 @@ export function FinalCTA() {
                    <p className="text-sm font-medium text-white">{t('support.emailUs')}</p>
                    <p className="text-xs text-neutral-400">{contactInfo.email}</p>
                  </div>
-               </a>
-               
-               <div className="group flex items-center gap-3">
-                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-400">
-                   <MessageSquare className="h-5 w-5" />
-                 </div>
-                 <div className="text-left">
-                   <p className="text-sm font-medium text-white">{t('support.liveChat')}</p>
-                   <p className="text-xs text-neutral-400">{contactInfo.liveChat}</p>
-                 </div>
-               </div>
-
-               <div className="group flex items-center gap-3">
+                </a>
+                
+                <div className="group flex items-center gap-3">
                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-400">
                    <Phone className="h-5 w-5" />
                  </div>

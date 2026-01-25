@@ -128,10 +128,9 @@ export function Footer() {
                   className="transition-colors hover:text-primary-400"
                 >
                   {contactInfo.email}
-                </a>
-              </li>
-              <li className="text-neutral-400">{contactInfo.liveChat}</li>
-            </ul>
+                 </a>
+               </li>
+             </ul>
           </div>
         </div>
 

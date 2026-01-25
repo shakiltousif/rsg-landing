@@ -264,17 +264,14 @@ export function FAQSection() {
              <p className="mb-4 text-neutral-600">
                {t('stillQuestions.description')}
              </p>
-             <div className="flex flex-wrap justify-center gap-3">
-               <a
-                 href="mailto:support@rideshareguides.com"
-                 className="inline-flex items-center rounded-lg bg-primary-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-primary-600"
-               >
-                 {t('stillQuestions.emailSupport')}
-               </a>
-               <button className="inline-flex items-center rounded-lg border-2 border-primary-500 px-6 py-2 font-semibold text-primary-600 transition-colors hover:bg-primary-50">
-                 {t('stillQuestions.liveChat')}
-               </button>
-             </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a
+                  href="mailto:support@rideshareguides.com"
+                  className="inline-flex items-center rounded-lg bg-primary-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-primary-600"
+                >
+                  {t('stillQuestions.emailSupport')}
+                </a>
+              </div>
            </Card>
         </FadeIn>
       </Container>

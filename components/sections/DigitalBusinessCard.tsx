@@ -51,9 +51,11 @@ export function DigitalBusinessCard() {
             {digitalBusinessCard.forDrivers.howItWorks}
           </p>
 
-          <Button variant="primary" size="lg">
-            Create Your Free Business Card
-          </Button>
+          <a href="https://www.rideshareguides.com/driver" target="_blank" rel="noopener noreferrer">
+            <Button variant="primary" size="lg">
+              Create Your Free Business Card
+            </Button>
+          </a>
         </div>
 
          {/* Business Card Preview */}

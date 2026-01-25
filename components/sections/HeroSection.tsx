@@ -38,16 +38,16 @@ export function HeroSection() {
             {/* CTAs */}
             <FadeIn delay={0.3}>
               <div className="flex flex-col gap-4 sm:flex-row mb-8">
-                <Button
-                  variant="primary"
-                  size="md"
-                  className="sm:text-lg sm:px-8 sm:py-3.5"
-                  href="#signup"
-                  icon={<ArrowRight className="h-5 w-5" />}
-                  iconPosition="right"
-                >
-                  {t('primaryCTA')}
-                </Button>
+                 <Button
+                   variant="primary"
+                   size="md"
+                   className="sm:text-lg sm:px-8 sm:py-3.5"
+                   href="https://www.rideshareguides.com/"
+                   icon={<ArrowRight className="h-5 w-5" />}
+                   iconPosition="right"
+                 >
+                   {t('primaryCTA')}
+                 </Button>
                 <Button
                   variant="secondary"
                   size="md"
